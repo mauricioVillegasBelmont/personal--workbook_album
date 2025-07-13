@@ -1,0 +1,31 @@
+body, body *{
+  font-family: "NespressoLucas", sans-serif;
+}
+img,svg{
+  @extend %display-block;
+  @extend %width-100;
+  user-select: none;
+}
+a{
+  text-decoration: none;
+  &.underline{
+    text-decoration: underline;
+  }
+}
+strong{
+  font-size:105%;
+  font-weight: bold;
+}
+body{
+  background-color: color_var("light-gray");
+  &.es{
+    .en{
+      display: none !important;
+    }
+  }
+  &.en{
+    .es{
+      display: none !important;
+    }
+  }
+}

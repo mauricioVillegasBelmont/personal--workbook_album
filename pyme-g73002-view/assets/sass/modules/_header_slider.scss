@@ -1,0 +1,20 @@
+.header_slider{
+  @extend %background-center-cover;
+  background-image: url('../img/slider/header_slider_bg.png');
+  .flexslider{
+    background: transparent;
+    border: none;
+  }
+  .flex-control-nav{
+    bottom: 1rem;
+  }
+  .flex-control-paging li a{
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .flex-control-paging li a.flex-active{
+    background: rgba(255, 255, 255, 0.9);
+  }
+  .flex-direction-nav a:before{
+    color: rgba(255, 255, 255, 0.9);
+  }
+}

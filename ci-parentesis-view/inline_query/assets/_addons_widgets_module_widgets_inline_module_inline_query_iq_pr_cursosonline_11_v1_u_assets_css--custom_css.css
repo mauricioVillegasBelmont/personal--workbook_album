@@ -1,0 +1,12 @@
+.inline-query button:focus{
+  outline: none;
+}
+.inline-query button.answered:not(.usr_selection) .overlay{
+  opacity: .5;
+}
+.inline-query button.answered.usr_selection .overlay{
+  background-color: #c82e41;
+}
+.inline-query-widget-wrapper .preloader .preloader-icon svg circle{
+  fill: #a5223a;
+}

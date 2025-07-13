@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="batery-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.fill-white{fill:#ffffff;}
+	.clip-path{clip-path:url(#clip-pat-batery);fill:#ffffff;}
+</style>
+<path id="XMLID_3588_" class="fill-white" d="M71.1,9.9H60.9v-6H42.7v6H32.4c-3,0-5.4,2.4-5.4,5.4v75.6c0,3,2.4,5.4,5.4,5.4h38.7
+	c3,0,5.4-2.4,5.4-5.4V15.3C76.6,12.3,74.2,9.9,71.1,9.9z M45.7,6.8h12.1v3H45.7V6.8z M73.6,90.3c0,1.2-1.2,2.4-2.4,2.4H32.4
+	c-1.2,0-2.4-1.2-2.4-2.4V14.7c0-1.2,1.2-2.4,2.4-2.4h10.3h18.1h10.3c1.2,0,2.4,1.2,2.4,2.4L73.6,90.3L73.6,90.3z"/>
+	<defs>
+		<path id="clip-pat-batery-path" d="M73,16.8c0-1.5-1.2-2.8-2.8-2.8H34.8c-1.5,0-2.8,1.2-2.8,2.8v72.5c0,1.5,1.2,2.8,2.8,2.8h35.5
+			c1.5,0,2.8-1.2,2.8-2.8V16.8z M50.4,72.6l-0.5-18.5l-6.5-0.2l12.3-20.4L55.6,51h5.9L50.4,72.6z"/>
+		</defs>
+		<clipPath id="clip-pat-batery">
+			<use xlink:href="#clip-pat-batery-path"  style="overflow:visible;"/>
+		</clipPath>
+		<rect id="batery-charge" x="31" y="12.5" class="clip-path" width="45" height="100">
+			<animate
+				attributeName="y"
+		    from="100"
+		    to="0"
+		    dur="3s"
+				repeatCount="indefinite"
+			/>
+		</rect>
+</svg>

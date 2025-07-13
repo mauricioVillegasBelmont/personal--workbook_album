@@ -1,0 +1,16 @@
+@media screen and (max-width: 568px) {
+	.menuButton .inner *{
+		font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.menuButton .inner *{
+		font-size: 100%;
+	}
+}
+@media screen and (min-width: 1367px) {
+	.menuButton .inner *{
+		font-size: 150%;
+	}
+}

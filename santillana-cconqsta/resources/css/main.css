@@ -1,0 +1,601 @@
+#start{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+#portada *{
+    -webkit-transition: none; /* Safari */
+            transition: none;
+}
+
+#mainWrapper{
+    position: relative;
+    cursor: pointer;
+}
+
+#mainWrapper.active{
+    cursor: auto;
+}
+
+#mainWrapper{
+    width:  100%;
+    height: 100%;
+}
+
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 10%;
+    z-index: 1000;
+    opacity: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #fff;
+}
+#header div{
+    height: 100%;
+    float: left;
+}
+#header div:nth-child(2){
+    width:  5%;
+}
+#header div:first-child{
+    width: 30%;
+}
+#header div.menu{
+    width: 60%;
+    float: left;
+}
+#header div.menu p{
+    border-left: 1px solid #dfdfdf;
+    cursor: pointer;
+    float: left;
+    padding: 1% 2%;
+    color: #562856;
+    font-family: 'header';
+    -webkit-transition: none;
+            transition: none;
+}
+#header div.menu p:first-child{
+    width: 0;
+    cursor: auto;
+    pointer-events: none;
+}
+#header div.menu p:first-child,#header div.menu p:nth-child(2){
+    border-left: none;
+}
+#header .menu p:hover{
+    border-bottom: 3px solid #a718ce;
+    color: #a718ce;
+}
+
+#header .menu p.current{
+    border-bottom: 3px solid #d01794;
+    color: #d01794;
+}
+#header .menu p:first-child.current{
+    border-bottom: none;
+}
+
+#header .logo img{
+    cursor: pointer;
+}
+
+#header #headerLogo{
+    display: none;
+}
+.active #header{
+    height: 12%;
+    display: block;
+    opacity: 1;
+    -webkit-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.3);
+    -moz-   box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.3);
+            box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.3);
+}
+.active #header .logo{
+    background-color: #000    ;
+}
+.active #header .spacer, .active #header .menu{
+    background-color: #fff;
+}
+
+#body{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.active #body{
+    
+}
+
+.slideWrapper{
+    position: relative;
+    top: 7%;
+    display: table;
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto 50px auto;
+}
+
+.videoWrapper{
+    display: table;
+    position: relative;
+    top: 4%;
+    width: 70%;
+    min-width: 800px;
+    height: 720px;
+    max-height: 93%;
+    padding: 20px;
+    margin: 0 auto 50px auto;
+}
+
+.videoWrapper .holoDContent{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.bodyText{
+    width: 80%;
+    text-align: justify;
+}
+
+.bullet {
+    width: 75%;
+    height: auto;
+    min-height: 15%;
+}
+
+.mainLayout{
+    
+}
+
+.mainWrapper{
+    
+}
+
+/*------------state---------------*/
+.prev{
+    left: -150%;
+    z-index: 1;
+    pointer-events: none;
+    -webkit-transform-origin: 100% 0% 100%;
+            transform-origin: 100% 0% 100%;
+    -webkit-transform: rotateY(90deg); /* Safari */
+            transform: rotateY(90deg);
+}
+
+.next{
+    left: 150%;
+    z-index: -1;
+    pointer-events: none;
+    -webkit-transform-origin: 100% 0% 100%;
+            transform-origin: 100% 0% 100%;
+    -webkit-transform: rotateY(-90deg); /* Safari */
+            transform: rotateY(-90deg);
+}
+
+.current{
+    left: 0;
+    z-index: 0;
+    pointer-events: all;
+    -webkit-transform: rotateY(0deg); /* Safari */
+            transform: rotateY(0deg);
+}
+
+/*------------inner info-------------*/
+
+
+#mainLogo{
+    width: 50%;
+    max-height: 70%;
+    position: absolute;
+    top: 10%;
+    right:7%
+}
+
+.bgImages{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%
+}
+
+.animated.bgImages{
+    left: 0 !important;
+}
+
+.unanimated.bgImages{
+    left: -300% !important;;
+}
+
+#mainLogo.unanimated{
+    right: -300% !important;
+}
+
+#clickImg.unanimated{
+    right: -300% !important;;
+}
+
+.active #clickImg{
+    opacity: 0;
+}
+
+
+/*buttons*/
+.horizontalNav{
+    display:  none;
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    z-index: 1000;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    -ms-    transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.active .horizontalNav{
+    display: block;
+}
+
+#sig.horizontalNav{
+    right: 2%;
+}
+
+#ant.horizontalNav{
+    left: 2%;
+}
+
+.disabled{
+    opacity: 0.2;
+    pointer-events: none;
+}
+.round{
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-   border-radius: 10px 10px 10px 10px;
+            border-radius: 10px 10px 10px 10px;
+}
+
+.startDisabled{
+    width: 0;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+.holo{
+    background-color: rgba(173, 177, 206,0.7);
+    background-image: url(../img/effectTest2.gif);
+    background-size: 2px 100%;
+    background-repeat: repeat-x;
+    background-position: center;
+    -webkit-box-shadow: 1px 1px 10px rgba(255, 255, 255,0.2), 1px 1px 10px #ccc;
+            box-shadow: 1px 1px 10px rgba(255, 255, 255,0.2), 1px 1px 10px #ccc;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-   border-radius: 10px 10px 10px 10px;
+            border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    /*white-space: nowrap;*/
+}
+
+.holo h2, .holo h3, .holo h4, .holo h5, .holo h6{
+    -webkit-text-shadow: 0px 0px 10px rgba(155, 155, 255,0.8);
+            text-shadow: 0px 0px 10px rgba(155, 155, 255,0.8);
+}
+
+.holo .holoDContent{
+    background-color: rgba(250, 250, 255,0.5);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 1px 1px 10px rgba(255, 255, 255,0.2);
+            box-shadow: 1px 1px 10px rgba(255, 255, 255,0.2);
+}
+
+.holo  p,.holo .holoDContent p, .holo .holoDContent ul li,.holo table tr td{
+    color:rgba(167, 24, 206,1);
+    -webkit-text-shadow: 0px 0px 10px rgba(155, 155, 255,0.6);
+            text-shadow: 0px 0px 10px rgba(155, 155, 255,0.6);
+    /*color:  rgba(106, 43, 216,1);*/
+}
+
+table.holo td{
+    vertical-align: top;
+}
+
+.holo img{
+    opacity: 0.8;
+}
+
+.holo video{
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-   border-radius: 10px 10px 10px 10px;
+            border-radius: 10px 10px 10px 10px;
+}
+
+.holo hr{
+    border: 1px solid rgba(168, 250, 255,0.7);
+}
+
+.col p{
+    text-align: justify;
+}
+
+h3.hotel{
+    padding-left: 170px;
+    left: 160px;
+}
+
+h3.hotel::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 157px;
+    height: 66px;
+    background: url(../img/Logo_HM.png) center/contain no-repeat;
+    opacity: 0.8;
+}
+
+.holoBtn{
+    padding: 15px;
+    margin: 20px;
+    font-family: 'body';
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(142, 107, 173);
+    color: rgba(255, 255, 255,0.8);
+    -webkit-box-shadow: 1px 1px 10px rgba(255, 255, 255,0.2);
+            box-shadow: 1px 1px 10px rgba(255, 255, 255,0.2);
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-   border-radius: 10px 10px 10px 10px;
+            border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.holoBtn:hover{
+    background-color: rgba(106, 43, 216,1);
+    color: rgba(255, 255, 255,1)
+}
+
+.holoBtn.selected{
+    background-color: rgba(255, 255, 255,0.5);
+    cursor: auto;
+    pointer-events: none;
+}
+#agendaDisplayer{
+    position: absolute;
+    top: 130px;
+    right: 0;
+}
+.agenda{
+    position: absolute;
+    top:  0;
+    right: 0;
+    width: 95%;
+}
+#agendaDisplayer .disabled{
+    width: 0;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+}
+.agenda table{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    white-space: normal;
+}
+
+#portada{
+    overflow: hidden;
+    background-position: bottom center;
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+}
+.active #portada{
+    background-image: url(../img/astroybandera.png);
+}
+#portada #videoBG{
+    -o- object-fit: cover;
+        object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.active #portada #videoBG{
+    display: none;
+    position: relative;
+}
+
+#videoBGPlayer{
+    /*position: absolute;*/
+    bottom:  0;
+    left: 50%;
+    max-width:  100%;
+    min-height: 100%;
+    width:  100%;
+    height: auto;
+    /*-webkit-transform: translateX(-50%);
+    transform: translateX(-50%);*/
+}
+
+.playButton{
+	background-image: url(../img/vidBtn_play.svg);
+    border: none;
+	float: right;
+    width: 75px;
+    height: 75px;
+	margin: 5px;
+}
+.pause{
+	background-image: url(../img/vidBtn_pause.svg);
+	
+}
+.muteButton {
+    background-image: url(../img/Mute_Icon_muted.svg);
+    border: none;
+    position: absolute;
+    
+    width: 75px;
+    height: 75px;
+}
+.vidBtn{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color:rgb(142, 107, 173);
+    cursor: pointer;
+}
+.vidBtn:hover{
+    background-color:rgb(111, 62, 201);
+}
+
+.mute {
+    background-image: url(../img/Mute_Icon_unmuted.svg);
+}
+
+#saberMas {
+    position: absolute;
+    display: block;
+    bottom:  50px;
+    right: 50px;
+    min-width: 70%;
+    width: auto;
+    height: 100px;
+}
+
+.active #portada #saberMas{
+	display: none;
+}
+
+#instructivo table{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 76%;
+}
+
+#instructivo table td{
+    width: calc(100% / 2);
+    padding: 10px 30px;
+    
+}
+#instructivo table td h4{
+    font-size: 1.3em;
+}
+#instructivo table td h5{
+    font-size:  1.1em;
+}
+#instructivo table td p, #instructivo table td ul li{
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+
+#instructivo table.vest th, #instructivo table.vest td{
+    border-left: 1px solid #fff;
+    vertical-align: top;
+}
+#instructivo table.vest th:first-child, #instructivo table.vest td:first-child{
+    border-left: none;
+    
+}
+#instructivo table.vest td h6{
+    margin-top: 10px;
+}
+#instructivo table.vest td p{
+    font-size: 0.9em;
+    text-align: left;
+}
+#instructivo table.vest td p:first-child{
+    margin-top: 10px;
+}
+#instructivoButtons{
+    position: absolute;
+    right: 0;
+}
+#instructivo table.disabled{
+    width: 0;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+}
+#BtnWrapper {
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	width: 75px;
+	height: 0;
+	opacity: 0;
+	pointer-events: none;
+}
+#boomerangsBtnWrapper {
+	display: block;
+	position: absolute;
+	top: 175px;
+	right: 5px;
+	width: 75px;
+	height: 0;
+	opacity: 0;
+	pointer-events: none;
+}
+#boomerangsBtnWrapper.active{
+	pointer-events: all;
+	height: auto;
+	opacity: 1;
+}
+.bomerangElement {
+	background-image: url();
+    border: none;
+	display: block;
+	float: left;
+	margin: 3px;
+    width:  31px;	
+	height: 31px;
+}
+#boomerangBtn {
+	background-image: url(../img/boomerang2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color:rgb(142, 107, 173);
+    border: none;
+    position: absolute;
+    top:85px;
+    right:5px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+#boomerangBtn.active, .bomerangElement.active{
+	background-color:rgb(118, 98, 132);
+}
+
+
+.BtnWrapper {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 95px;
+	height: 100%;
+}

@@ -1,0 +1,19 @@
+.swing-left-fwd {
+	-webkit-animation: swing-left-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: swing-left-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@include keyframes(swing-fwd){
+  0% {
+    -webkit-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
+  }
+};

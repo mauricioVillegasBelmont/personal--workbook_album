@@ -1,0 +1,34 @@
+%background-no-repeat{
+  background-repeat: no-repeat;
+}
+%background-cover{
+  background-size: cover;
+}
+%background-contain{
+  background-size: contain;
+}
+%background-top{
+  background-position: top;
+}
+%background-bottom{
+  background-position: bottom;
+}
+%background-center{
+  background-position: center;
+}
+%background-left{
+  background-position: left;
+}
+%background-right{
+  background-position: right;
+}
+%background-center-icon{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+%background-center-cover{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

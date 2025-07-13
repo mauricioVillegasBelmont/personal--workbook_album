@@ -1,0 +1,478 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,prictureFrame{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+/* ---- base ---- */
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: #111;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+html {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+.snow{
+	position: absolute;
+	top:    0;
+	left:   0;
+	right:  0;
+	bottom: 0;
+	margin: 0 auto;
+	height: 100vh;
+	width: 100vw;
+}
+canvas {
+	display: block;
+	vertical-align: bottom;
+}
+img{
+	display: block;
+	object-position: center;
+	min-width: 0;
+	min-height: 0;
+}
+video{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: 0;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+footer img{
+	object-fit: contain;
+	object-position: center;
+}
+/* =============================================================================
+   nav
+   ========================================================================== */
+.latreralNav{
+	position: absolute;
+	top:50%;
+	z-index: 100001;
+	cursor: pointer;
+	transform: translateY(-50%);
+}
+
+/* =============================================================================
+   sections
+   ========================================================================== */
+section{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
+section.prevPage .wrapper,
+section.nextPage .wrapper{
+	width: 0;
+	min-width: 0;
+	height: 0;
+	min-height: 0;
+	pointer-events: none;
+}
+section.current>.md_wrapp{
+	min-width: 357px;
+	max-width: 70vw;
+	min-height: 357px;
+	max-height: 80vh;
+
+}
+section.current>.fs_wrapp{
+	width: 100vw;
+	height: 100vh;
+}
+
+
+
+/* =============================================================================
+   footer
+   ========================================================================== */
+footer{
+	position: absolute !important;
+	bottom: 0;
+	left: 0;
+	z-index: 100002;
+	width: 140px;
+	max-width: 80vw;
+	min-height: 50px;
+	max-height: 55px;
+}
+footer>div{
+	display: inline-block !important;
+	vertical-align:middle;
+	position: relative;
+	margin-right: 15px;
+	width: auto;
+	min-width: 20px;
+	height: 100%;
+}
+#sc_lnk{
+	height: 100%;
+	width: auto;
+	max-width: 150px;
+	min-width: 20px;
+}
+/* =============================================================================
+   objects
+   ========================================================================== */
+#particlesBG {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#particles01 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* =============================================================================
+   movil devices
+   ========================================================================== */
+
+/* =============================================================================
+   ========================================================================== */
+
+
+
+@media only screen and (max-device-width : 1024px){
+	/* =============================================================================
+   nav
+   ========================================================================== */
+	.latreralNav{
+		width: 3vh;
+		height: 10vh;
+		opacity: 0.3;
+	}
+	#nxt_btn{
+		right: 10px;
+	}
+
+	#prv_btn{
+		left: 10px;
+	}
+	/* =============================================================================
+   sections
+   ========================================================================== */
+
+	/* =============================================================================
+   objetos // paginas/// galleryWrapp
+   ========================================================================== */
+	.galleryWrapp{
+		-ms-grid-template-columns: repeat(auto-fill, minmax(150px, 1fr) ) !important;
+		-ms-grid-auto-rows: 150px !important;
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr) ) !important;
+		grid-auto-rows: 150px !important;
+	}
+
+
+	/* =============================================================================
+   objetos // paginas/// picframe
+   ========================================================================== */
+	#teamPic{
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+	}
+	#teamBanner{
+		top: 0;
+		right: 0;
+		left: 60%;
+		width: 40%;
+	}
+	/* =============================================================================
+   objetos // paginas/// prictureFrame
+   ========================================================================== */
+	section.current>.prictureFrame h1{
+		font-size: 100%;
+	}
+	section.current>.prictureFrame h2{
+		font-size: 100%;
+	}
+	.modal-content {
+		background-color: #fefefe;
+		margin: 5vh auto; /* 15% from the top and centered */
+		padding: 20px;
+		border: 1px solid #888;
+		max-width:  90vw; /* Could be more or less, depending on screen size */
+		max-height: 90vh;
+	}
+	#modalPic{
+		object-fit: contain;
+		width: 100%;
+		height: auto;
+		max-height: 100%;
+
+	}
+	.modal-content{
+		width:  92vw; /* Could be more or less, depending on screen size */
+		height: auto;
+		max-height: 94vh;
+	}
+	#closeModal {
+		top:    3vh;
+		right:  3vw;
+		width:  30px;
+		height: 30px;
+		line-height: 30px;
+	}
+
+	/* =============================================================================
+   objetos // paginas/// prictureFrame
+   ========================================================================== */
+	.ytVideoFrameWrapp{
+		-ms-grid-template-rows: minmax(320px, 100%);
+		grid-template-rows: minmax(320px, 100%);
+	}
+	/* =============================================================================
+   footer
+   ========================================================================== */
+	footer #sc_lnk{
+		width: 100%;
+	}
+	footer span.lnk{
+		display: none !important;
+	}
+	#chrGr{
+		object-fit: contain;
+		height: auto !important;
+		max-height: 90vh;
+		max-width: 90vw;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 736px) {
+/* Styles */
+	section.current>.md_wrapp {
+		min-width: 300PX;
+		max-width: 90vw;
+		min-height: 80vh;
+		max-height: 80vh;
+	}
+	#teamPic{
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+	}
+	#teamBanner{
+		top: 0;
+		right: 0;
+		left: 60%;
+		width: 40%;
+	}
+	/* =============================================================================
+   nav
+   ========================================================================== */
+	.latreralNav{
+		top:50%;
+		width: 5vh;
+		height: 20vh;
+		opacity: 1;
+	}
+	#nxt_btn{
+		right: 1.5vw;
+	}
+
+	#prv_btn{
+		left: 1.5vw;
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-device-width : 736px) {
+/* Styles */
+	section.current>.md_wrapp {
+		min-width: 300PX;
+		max-width: 90vw;
+		min-height: 80vh;
+		max-height: 80vh;
+	}
+	/* =============================================================================
+   objetos // paginas/// picframe
+   ========================================================================== */
+	#teamPic{
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+	}
+	#teamBanner{
+		top: 0;
+		right: 0;
+		left: 60%;
+		width: 40%;
+	}
+	#teamdec00{
+		bottom: 0;
+		left: -25%;
+		right: 0;
+		top: 0;
+			width: 150%;
+		max-width: 150%;
+		object-fit: contain;
+		object-position: top center;
+	}
+	#teamdec01{
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+		width: 100%;
+		max-width: 100%;
+		object-fit: contain;
+		object-position: bottom center;
+	}
+}
+
+/* tablet ipad (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+	section.current>.md_wrapp {
+		min-width:  90vw;
+		max-width:  90vw;
+		min-height: 70vh;
+		max-height: 70vh;
+	}
+}
+/* tablet ipad (landscape) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+
+}
+/*pc  screen */
+@media only screen and (min-width : 1025px){
+
+	.galleryWrapp{
+		-ms-grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) !important;
+		-ms-grid-auto-rows: 250px !important;
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) !important;
+		grid-auto-rows: 250px !important;
+	}
+	/* =============================================================================
+   objetos // paginas/// prictureFrame
+   ========================================================================== */
+	.latreralNav{
+		width: 2vw	;
+		height: 15vh;
+	}
+	#nxt_btn{
+	right: 3vw;
+	}
+
+	#prv_btn{
+		left: 3vw;
+	}
+
+
+
+
+	/* =============================================================================
+   objetos // paginas/// prictureFrame
+   ========================================================================== */
+	.prictureFrame{
+		width: 100%;
+		height: auto;
+		/*-ms-grid-template-rows: 15vh minmax(570px, 80vh) repeat(auto-fill, minmax(90px, min-content) );
+		grid-template-rows: 15vh minmax(570px, 80vh) repeat(auto-fill, minmax(90px, min-content) );*/
+	}
+
+
+
+	#teamPic{
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+	}
+	#teamBanner{
+		top: 0;
+		right: 0;
+		left: 80%;
+		width: 20%;
+	}
+	#teamdec00{
+		max-width: 80%;
+		object-fit: contain;
+		object-position: top left;
+	}
+	#teamdec01{
+		max-width: 80%;
+		object-fit: contain;
+		object-position: bottom left;
+	}
+
+
+
+	.modal-content{
+		width:  92vw; /* Could be more or less, depending on screen size */
+		height: auto;
+		max-height: 92vh;
+	}
+	#modalPic{
+		object-fit: cover;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	#closeModal {
+		top:   2vh;
+		right: 2vw;
+		width:  25px;
+		height: 25px;
+		line-height: 27px;
+	}
+	/*footer{
+		min-width: 200px;
+	}*/
+	footer img.lnk{
+		height: 30px !important;
+	}
+}

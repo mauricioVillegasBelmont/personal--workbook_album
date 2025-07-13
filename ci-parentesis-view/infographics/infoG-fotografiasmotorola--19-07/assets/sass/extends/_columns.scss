@@ -1,0 +1,12 @@
+%grid-column {
+  
+  padding-right: $gutter / 2;
+  padding-left: $gutter / 2;
+
+}
+
+%grid-menu {
+  &:not(:last-child){
+    margin-right: #{$unit * 0.75};
+  }
+}

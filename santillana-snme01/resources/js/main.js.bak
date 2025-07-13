@@ -1,0 +1,111 @@
+var page = document.getElementById('mainWrapper');
+var slides = document.getElementsByTagName('section');
+var ant  = document.getElementById('ant');
+var sig  = document.getElementById('sig');
+var slideIndex = 0;
+function agendaIndex(){
+    var agendaLi   = document.querySelectorAll(".current .agenda .rail>div>div");
+    var agendaData = document.querySelectorAll(".current .agenda .railContent>div>div");
+    //console.log(agendaLi);
+    var j = 0;
+    if(agendaLi != null|| agendaLi != undefined){
+        for(var i = 0;i <= agendaLi.length-1;i++){
+            agendaLi[i].addEventListener('mouseover',function(){
+                var getChildIndex = function(child){
+                var parent = child.parentNode;
+                var j = parent.children.length - 1;
+                    for (; j >= 0; j--){
+                        if (child == parent.children[j]){
+                            break;
+                        }
+                    }
+                    return j;
+                };
+                var index = getChildIndex(this);
+                //console.log(index);
+                agendaData[index].classList.add('hover');
+            },false);
+            agendaLi[i].addEventListener('mouseout',function(){
+                var getChildIndex = function(child){
+                var parent = child.parentNode;
+                var k = parent.children.length - 1;
+                    for (; k >= 0; k--){
+                        if (child == parent.children[k]){
+                            break;
+                        }
+                    }
+                    return k;
+                };
+                var index = getChildIndex(this);
+                console.log(index);
+                agendaData[index].classList.remove('hover');
+            },false);
+        }
+    }else{
+        console.log('no se cargo ningun elemento de agenda');
+    }
+}
+
+
+function setCurrent(elem,index){
+    for(var i = index-1;i>=0;i--){
+        if(elem[i].classList.contains('current')){
+            elem[i].classList.remove('current');
+        }
+        if(elem[i].classList.contains('next')){
+            elem[i].classList.remove('next');
+        }
+        elem[i].classList.add('prev');
+    }
+    elem[index].classList.remove('prev','next');
+    elem[index].classList.add('current');
+    for(var i = index+1;i <= elem.length-1;i++){
+        if(elem[i].classList.contains('current')){
+            elem[i].classList.remove('current');
+        }
+        if(elem[i].classList.contains('prev')){
+            elem[i].classList.remove('prev');
+        }
+        elem[i].classList.add('next');
+    }
+    agendaIndex();
+}
+
+function activate(){
+    if(!page.classList.contains('active')){
+        page.classList.add('active');
+        slideIndex += 1;
+        setCurrent(slides,slideIndex);
+    }
+}
+
+function next(trigger,elem,index){
+    
+}
+function prev(trigger,elem,index){
+    
+}
+function goTo(trigger,elem,index){
+    
+}
+function horizontalNav(trigger,inc){
+    var navButtons = document.getElementsByClassName('horizontalNav');
+    slideIndex += inc;
+    setCurrent(slides,slideIndex);
+    if(slideIndex + 1 >= slides.length||slideIndex - 1 <= 0){
+        trigger.classList.add('disabled');
+    }else{
+        for(var i = 0;i<=navButtons.length-1;i++){
+            if(navButtons[i].classList.contains('disabled')){
+                navButtons[i].classList.remove('disabled');
+            }
+        }
+    }
+}
+document.addEventListener('DOMContentLoaded', function(){
+    setCurrent(slides,slideIndex);
+    
+    ant.classList.add('disabled'),
+    ant.addEventListener('click',function(){horizontalNav(ant,-1)},false);
+    sig.addEventListener('click',function(){horizontalNav(sig,1)} ,false);
+}, false);

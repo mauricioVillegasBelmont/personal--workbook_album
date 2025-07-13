@@ -1,0 +1,38 @@
+$flex-prefixes: webkit-box moz-box webkit moz ms;
+// $flex-prefixes:false;
+//mediaquery responsive $breakpoints
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xx: 1560px
+);
+
+//zindex
+$zindex_values:(
+  sticky:            1020,
+  fixed:             1030,
+  modal-backdrop:    1040,
+  dropdown:          1045,
+  modal:             1050,
+  popover:           1060,
+  tooltip:           1070,
+);
+
+$root_colors: false;
+$color_list : (
+  "white": #FFFFFF,
+  "black": #000,
+  "gray": #c6c6c6,
+  "light-gray": #f7f7f7,
+  "dark-gray": #737373,
+);
+
+
+$position_utilities: true;
+$display_utilities: true;
+$flex_utilities: true;
+// $width_utilities: true;
+// $zindex_utilities: true;

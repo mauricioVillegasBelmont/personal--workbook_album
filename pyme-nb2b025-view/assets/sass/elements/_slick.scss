@@ -1,0 +1,28 @@
+.slick-dots li button:before{
+  font-size: 12px;
+}
+.slick-arrow{
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  z-index: 1;
+  &.slick-prev{
+    left: 0;
+  }
+  &.slick-next{
+    right: 0;
+  }
+  @include media-breakpoint-up(md){
+    &.slick-prev{
+      left: -30px;
+    }
+    &.slick-next{
+      right: -30px;
+    }
+  }
+  &::before{
+   font-size: 30px;
+   color: black;
+  }
+
+}

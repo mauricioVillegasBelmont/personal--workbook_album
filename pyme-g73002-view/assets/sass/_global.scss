@@ -1,0 +1,51 @@
+img{
+  @extend %display-block;
+  @extend %width-100;
+}
+.bg{
+  @each $key, $value in $color_list{
+    &_#{$key}{@extend %BG_#{$key};}
+  }
+}
+
+@for $i from 1 through 6{
+  h#{$i}{
+    line-height: 1.25;
+    @extend %header_font_family;
+    @each $key, $value in $color_list{
+      &.#{$key}{@extend %F_color_#{$key};}
+    }
+    & > a, & > strong, & > em, & > u, & > mark{
+      @extend %font_family_inherit;
+      @extend %F_color_inherit;
+    }
+  }
+}
+p,ul li, ol li {
+  @extend %paragraph_font_family;
+  line-height: 1.25;
+  & > &,& > a, & > strong, & > em, & > u, span, & > mark{
+    @extend %font_family_inherit;
+    @extend %F_color_inherit;
+  }
+}
+
+p,strong,em,a,u,span,label,li,mark{
+  @each $key, $value in $color_list{
+    &.#{$key}{@extend %F_color_#{$key};}
+  }
+}
+a{
+  text-decoration: none;
+  @include hover(){
+    // color: color_var('red');
+  };
+}
+.text-center{@extend %text_center;}
+.text-right{@extend %text_right;}
+.text-justify{@extend %text_justify;}
+.text-left{@extend %text_left;}
+
+.margin-0-auto{
+  margin: 0 auto;
+}

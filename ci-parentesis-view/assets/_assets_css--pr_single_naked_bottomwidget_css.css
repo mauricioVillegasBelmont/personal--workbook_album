@@ -1,0 +1,67 @@
+/* footer {
+    display: none!important;
+} */
+
+.boton-subir {
+  display: none!important;
+}
+
+.breadcrumb {
+    display: none!important;
+}
+HEADER#pr_main_header{
+  position: relative;
+}
+section.notequiz {
+    max-width: 650px;
+    margin: 0 auto;
+}
+section.notequiz .questionnaire .slide{
+  padding: 0 0 1.75rem;
+}
+section.notequiz .questionnaire .slide .title{
+  padding: 2rem 0 .5rem;
+}
+section.notequiz .next-btn-wrapper button.next-btn{
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+}
+.notequiz .progress-meter .bar .wrapper, .sidebarquiz .progress-meter .bar .wrapper{
+  left: 0;
+  width: 100%;
+}
+.notequiz .next-btn-wrapper button.next-btn, .notequiz .next-btn-wrapper button.prev-btn, .notequiz .next-btn-wrapper input[type=button], .notequiz .next-btn-wrapper input[type=submit], .sidebarquiz .next-btn-wrapper button.next-btn, .sidebarquiz .next-btn-wrapper button.prev-btn, .sidebarquiz .next-btn-wrapper input[type=button], .sidebarquiz .next-btn-wrapper input[type=submit]{
+      border: 2px solid #c82e41;
+}
+.notequiz .next-btn-wrapper button.next-btn:hover, .notequiz .next-btn-wrapper button.prev-btn:hover, .notequiz .next-btn-wrapper input[type=button]:hover, .notequiz .next-btn-wrapper input[type=submit]:hover, .sidebarquiz .next-btn-wrapper button.next-btn:hover, .sidebarquiz .next-btn-wrapper button.prev-btn:hover, .sidebarquiz .next-btn-wrapper input[type=button]:hover, .sidebarquiz .next-btn-wrapper input[type=submit]:hover,.notequiz button.active{
+  background-color: #c82e41;
+  color: #fff;
+}
+.notequiz .tick-iconA button:hover svg.tick .line-animate, .notequiz .tick-iconA input:hover svg.tick .line-animate, .sidebarquiz .tick-iconA button:hover svg.tick .line-animate, .sidebarquiz .tick-iconA input:hover svg.tick .line-animate,
+.notequiz .tick-iconA button svg .static, .notequiz .tick-iconA input svg .static, .notequiz .tick-iconB button svg .static, .notequiz .tick-iconB input svg .static, .notequiz .verified-icon button svg .static, .notequiz .verified-icon input svg .static, .sidebarquiz .tick-iconA button svg .static, .sidebarquiz .tick-iconA input svg .static, .sidebarquiz .tick-iconB button svg .static, .sidebarquiz .tick-iconB input svg .static, .sidebarquiz .verified-icon button svg .static, .sidebarquiz .verified-icon input svg .static,
+.notequiz .tick-iconA button svg .line-animate, .notequiz .tick-iconA input svg .line-animate, .notequiz .tick-iconB button svg .line-animate, .notequiz .tick-iconB input svg .line-animate, .notequiz .verified-icon button svg .line-animate, .notequiz .verified-icon input svg .line-animate, .sidebarquiz .tick-iconA button svg .line-animate, .sidebarquiz .tick-iconA input svg .line-animate, .sidebarquiz .tick-iconB button svg .line-animate, .sidebarquiz .tick-iconB input svg .line-animate, .sidebarquiz .verified-icon button svg .line-animate, .sidebarquiz .verified-icon input svg .line-animate,svg.harmonia-spinner path.preloader_harmonia-trace{
+  stroke: #c82e41;
+}
+.notequiz .tick-iconA button.active svg.tick .line-animate{
+  stroke: #fff;
+}
+
+.notequiz .progress-meter .bar .progress, .sidebarquiz .progress-meter .bar .progress{
+  background: -webkit-linear-gradient(left,#d65c6a 0,#b32939 100%);
+  background: -o-linear-gradient(left,#d65c6a 0,#b32939 100%);
+  background: linear-gradient(to right,#d65c6a 0,#b32939 100%);
+}
+.notequiz .next-btn-wrapper, .sidebarquiz .next-btn-wrapper{
+  box-shadow: 0 -6px 6px -6px rgb(49 93 130 / 75%);
+}
+.notequiz .progress-meter .bar span {
+  color: #fff;
+}
+.notequiz .progress-meter .bar span{
+  background-color:#c82e41;
+}
+
+.notequiz .slide button.ans-btn-imgselector-text .btn-label{
+  background-color:#c82e41;
+}
+header.main_header .menu_btn{display: none;}

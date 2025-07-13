@@ -1,0 +1,184 @@
+.rdv {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bg-light{
+  background-color: #edf0f4;
+}
+  .rdv-card {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding: 0;
+    overflow: hidden; }
+@media (min-width: 992px) {
+  .rdv-card {
+    max-width: calc(50% - .75rem);
+    margin: 0 auto 1rem;
+  }
+  .rdv-card.full-card{
+    max-width: 100%;
+  }
+}
+.rdv strong,.rdv .strong{
+  font-weight: bold;
+}
+.rdv-ol{
+  list-style: auto;
+  padding-left: 1.25rem;
+}
+.rdv-ul{
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+.flex-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 992px) {
+  .flex-wrapper .rdv-wrapper{
+    flex: 1;
+    max-width: 40%;
+    order:initial;
+  }
+  .flex-wrapper .rdv-card-img{
+    max-width: 60%;
+  }
+  .flex-wrapper .order-lg-1{
+    order: 1;
+  }
+}
+.flex-1{
+  flex: 1;
+}
+    .rdv.rdv-card.bg-main {
+      background-color: #c82e41; }
+    .rdv.rdv-card.bg-secondary {
+      background-color: #272727; }
+  .rdv.shadow, .rdv .shadow {
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.15), 0px 0px 3px rgba(0, 0, 0, 0.1); }
+  .rdv .head-shadow {
+    box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.5); }
+  .rdv p, .rdv li {
+    font-size: 1rem;
+    color: #383838;
+    margin-bottom: .5rem; }
+  .mb-3{
+    margin-bottom: .75rem;
+  }
+  .mt-3{
+    margin-top: .75rem;
+  }
+  .mb-4{
+    margin-bottom: 1rem !important;
+  }
+  .rdv small {
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic; }
+  .rdv img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center; }
+  .rdv-wrapper, .rdv-header,.txt-wrapper {
+    width: 100%;
+    padding: 1rem .75rem;
+    position: relative; }
+.rdv-wrapper .overlap-wrapper, .rdv-header .overlap-wrapper{
+  padding: 1rem .75rem;
+  margin: 0 -.75rem -1rem;
+  width: calc(100% + 1.5rem);
+}
+  .rdv-red {color: #c82e41;}
+  .rdv-h1 {
+    font-size: 1.75rem;
+    margin-bottom: .75rem;
+    font-weight: bold; }
+    .title-info-right-slyle,.title-info-left-slyle{
+      padding: .75rem;
+      transform: translate(-.75rem, -1rem);
+      background: #0F1009;
+      color: #fff;
+      z-index:
+    }
+  @media (min-width: 992px) {
+    .title-info-right-slyle{
+      padding: .75rem 1.75rem .75rem .75rem;
+      transform: translateX(30px);
+      background: black;
+      color: #fff;
+      z-index: 1;
+    }
+    .title-info-left-slyle{
+      padding: .75rem .75rem .75rem 1.75rem;
+      transform: translateX(-30px);
+      background: black;
+      color: #fff;
+      z-index: 1;
+    }
+  }
+
+  .rdv-h2 {
+    font-size: 1.75rem;
+    font-weight: bold; }
+  .rdv-h3 {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .rdv-ol {
+    margin-top: .25rem;
+    list-style: decimal;
+    padding-left: 1.5rem; }
+  .rdv-ml {
+    margin-right: .5rem; }
+  .rdv-ml {
+    margin-left: .5rem; }
+  .rdv .text-right {
+    text-align: right; }
+  .rdv .deco {
+    padding: .5rem;
+    max-width: 40%;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 0.875rem solid #c82e41;
+    position: relative;
+    margin-top: -1.5rem; }
+  .rdv-float-righ {
+    float: right; }
+  .rdv-tip {
+    display: flex;
+    margin-top: 2.5rem;
+    padding: .75rem .5rem;
+    position: relative;
+    background-color: #c82e41; }
+    .rdv-tip.bg-secondary {
+      background-color: #272727; }
+    .rdv-tip .tip {
+      position: relative;
+      max-width: 30%;
+      margin-bottom: auto;
+      object-fit: contain; }
+      .rdv-tip .tip.mt {
+        margin-top: -3rem; }
+    .rdv-tip .tip-wrapper {
+      max-width: 70%;
+      padding-left: .5rem;
+      padding-right: .5rem; }
+      .rdv-tip .tip-wrapper p, .rdv-tip .tip-wrapper h1, .rdv-tip .tip-wrapper h3 {
+        color: #ffffff; }
+.bg-dark{
+  background-color: #0F1009;
+  color: #fff;
+}
+.bg-dark p,.bg-dark li{
+  color: #fff !important;
+}
+.rdv-hr{
+  max-width: 30%;
+  border: 1px solid #a8a8a8;
+  margin: 1.75rem auto;
+}
+/*# sourceMappingURL=qf-notequiz-results.pr.css.map */

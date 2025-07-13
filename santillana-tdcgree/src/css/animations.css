@@ -1,0 +1,82 @@
+div.anim{
+	left: 0;
+	right: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-repeat: repeat-x;
+	-webkit-transition: all 2s; /* Safari */
+    		transition: all 2s;
+}
+div.fired{
+	opacity: 1;
+}
+.team_pic.fired{
+	-webkit-transition: all 3s; /* Safari */
+    		transition: all 3s;
+}
+#bak2{
+	top: 0;
+	bottom: 0;
+	background: -moz-linear-gradient(top, rgba(20,15,54,1) 1%, rgba(41,28,74,1) 35%, rgba(0,60,88,1) 63%, rgba(32,124,202,1) 84%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(20,15,54,1) 1%,rgba(41,28,74,1) 35%,rgba(0,60,88,1) 63%,rgba(32,124,202,1) 84%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(20,15,54,1) 1%,rgba(41,28,74,1) 35%,rgba(0,60,88,1) 63%,rgba(32,124,202,1) 84%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+#bakg{
+	top: 0;
+	bottom: 0;
+	background-image: url(../img/anim_bg.png);
+	background-size: cover;
+	background-position: center;
+}
+
+#mtns{
+	bottom: 0;
+	height: 30%;
+	background-image: url(../img/anm_mountains.svg);
+	background-size: auto 100%;
+	background-position: bottom center;
+	transform: rotateX(90deg);
+    -webkit-transform-origin: center bottom; /* Chrome, Safari, Opera */
+    -ms-	transform-origin: center bottom; /* IE 9 */
+    		transform-origin: center bottom;
+    -webkit-transform: rotateX(-90deg); /* Chrome, Safari, Opera */
+	-ms-	transform: rotateX(-90deg); /* IE 9 */
+    		transform: rotateX(-90deg);
+}
+#mtns.fired{
+	-webkit-transform: rotateX(0deg);
+	-ms-	transform: rotateX(0deg);
+			transform: rotateX(0deg);
+}
+#blls{
+	top: 0;
+	height: 30%;
+	background-image: url(../img/anm_bells.svg);
+	background-size: auto 100%;
+	background-position: top center;
+	-webkit-transform-origin: center top; /* Chrome, Safari, Opera */
+    -ms-	transform-origin: center top; /* IE 9 */
+    		transform-origin: center top;
+    -webkit-transform: rotateX(-90deg); /* Chrome, Safari, Opera */
+	-ms-	transform: rotateX(-90deg); /* IE 9 */
+    		transform: rotateX(-90deg); 
+}
+#blls.fired{
+	-webkit-transform: rotateX(0deg);
+	-ms-	transform: rotateX(0deg);
+			transform: rotateX(0deg);
+}
+#msg1,#msg2{
+	top: 0;
+	bottom: 0;
+	background-size: contain;
+	background-position: center;
+}
+#msg1{
+	background-image: url(../img/anm_msg01.svg);
+}
+#msg2{
+	background-image: url(../img/anm_msg02.svg);
+}

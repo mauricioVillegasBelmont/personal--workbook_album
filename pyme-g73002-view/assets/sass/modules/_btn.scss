@@ -1,0 +1,49 @@
+.btn{
+  display: block;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  font-size: 1rem;
+  @include media-breakpoint-up(lg){
+    font-size: 1.25rem;
+  }
+}
+
+.h_btn{
+  @extend %background-center-cover;
+  color: color_var('white');
+  background-color: color_var('red');
+  border-radius: .25rem;
+  padding: .5rem 1rem;
+  min-width: 250px;
+  margin-bottom: 1rem;
+  @include media-breakpoint-up(lg){
+    min-width: 320px;
+  }
+  @include hover(){
+    color: color_var('black');
+    background-image: url('../img/btn.jpg');
+  }
+}
+
+.submit_btn{
+  @extend %background-center-cover;
+  color: color_var('white');
+  background-color: color_var('red');
+  border-radius: .25rem;
+  padding: .5rem 1rem;
+  @include hover(){
+    color: color_var('black');
+    background-image: url('../img/btn.jpg');
+  }
+}
+
+.side_menu_close, .main_header_side_menu_btn {
+  max-width: 40px;
+  background-color: transparent;
+}
+.side_menu_close{
+
+}

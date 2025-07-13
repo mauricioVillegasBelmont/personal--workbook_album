@@ -1,0 +1,1159 @@
+#infographics table.stiky-table tbody tr > th:first-child, #infographics table.stiky-table thead tr > th:first-child {
+  position: absolute;
+  left: 0;
+  min-height: 4.5rem;
+}
+#infographics table.stiky-table tbody tr > th:first-child, #infographics table.stiky-table thead tr > th:first-child, #infographics table.stiky-table tbody tr > th:nth-child(2), #infographics table.stiky-table thead tr > th:nth-child(2), #infographics table.stiky-table tbody tr > td:nth-child(2), #infographics table.stiky-table thead tr > td:nth-child(2) {
+  min-width: 100px;
+  width: 100px;
+  max-width: 100px;
+  flex: 1 1 100px;
+}
+@media (min-width: 768px) {
+  #infographics table.stiky-table tbody tr > th:first-child, #infographics table.stiky-table thead tr > th:first-child, #infographics table.stiky-table tbody tr > th:nth-child(2), #infographics table.stiky-table thead tr > th:nth-child(2), #infographics table.stiky-table tbody tr > td:nth-child(2), #infographics table.stiky-table thead tr > td:nth-child(2) {
+    min-width: 130px;
+    width: 130px;
+    max-width: 130px;
+    flex: 1 1 130px;
+  }
+}
+#infographics table.stiky-table tbody tr > th:nth-child(2), #infographics table.stiky-table thead tr > th:nth-child(2), #infographics table.stiky-table tbody tr > td:nth-child(2), #infographics table.stiky-table thead tr > td:nth-child(2) {
+  visibility: hidden;
+}
+#infographics table.stiky-table tbody tr > th, #infographics table.stiky-table thead tr > th, #infographics table.stiky-table tbody tr > td:nth-child(2), #infographics table.stiky-table thead tr > td:nth-child(2) {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+@media (min-width: 321px) {
+  #infographics table.stiky-table tbody tr > th, #infographics table.stiky-table thead tr > th, #infographics table.stiky-table tbody tr > td:nth-child(2), #infographics table.stiky-table thead tr > td:nth-child(2) {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) {
+  #infographics table.stiky-table tbody tr > th, #infographics table.stiky-table thead tr > th, #infographics table.stiky-table tbody tr > td:nth-child(2), #infographics table.stiky-table thead tr > td:nth-child(2) {
+    font-size: 1rem;
+  }
+}
+#infographics table.stiky-table tbody tr > th p, #infographics table.stiky-table thead tr > th p, #infographics table.stiky-table tbody tr > td:nth-child(2) p, #infographics table.stiky-table thead tr > td:nth-child(2) p {
+  line-height: normal !important;
+}
+#infographics table.stiky-table tbody tr > th p > small, #infographics table.stiky-table thead tr > th p > small, #infographics table.stiky-table tbody tr > td:nth-child(2) p > small, #infographics table.stiky-table thead tr > td:nth-child(2) p > small {
+  font-size: 60%;
+  display: block;
+  margin: 0;
+  line-height: normal;
+}
+#infographics table.stiky-table tbody tr > th.axis, #infographics table.stiky-table thead tr > th.axis {
+  font-weight: normal;
+  font-size: 1.25rem;
+  z-index: 1;
+}
+
+#infographics table.stiky-table, #infographics table.stiky-table > thead, #infographics table.stiky-table > tbody, #infographics table.stiky-table > th, #infographics table.stiky-table > td, #infographics table.stiky-table > tr {
+  display: block;
+  text-align: center;
+  user-select: none;
+}
+#infographics table.stiky-table {
+  overflow: auto;
+  width: 100%;
+  max-width: 100%;
+  position: unset;
+  border-top: 1px solid transparent;
+  margin: 0 auto;
+  cursor: grab;
+}
+#infographics table.stiky-table:active ,#infographics table.stiky-table.grab{
+  cursor: grabbing;
+}
+#infographics table.stiky-table tr {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: visible;
+  position: unset;
+}
+#infographics table.stiky-table tr > th, #infographics table.stiky-table tr td {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24vw;
+  width: 24vw;
+  max-width: 24vw;
+  flex: 1 1 24vw;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  overflow: hidden;
+}
+@media (min-width: 321px) {
+  #infographics table.stiky-table tr > th, #infographics table.stiky-table tr td {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  #infographics table.stiky-table tr > th, #infographics table.stiky-table tr td {
+    width: 125px;
+    min-width: 125px;
+    max-width: 125px;
+    flex: 1 1 125px;
+    font-size: 1rem;
+  }
+}
+#infographics table.stiky-table tr > th small, #infographics table.stiky-table tr td small {
+  line-height: 1.2rem;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  margin-left: 0.1rem;
+}
+#infographics table.stiky-table tr th {
+  pointer-events: none;
+  padding: 0.5rem;
+}
+@media (min-width: 768px) {
+  #infographics table.stiky-table tr th {
+    padding: 0.75rem;
+  }
+}
+#infographics table.stiky-table tr td {
+  padding: 0.25rem;
+}
+@media (min-width: 768px) {
+  #infographics table.stiky-table tr td {
+    padding: 0.5rem;
+  }
+}
+#infographics table.stiky-table tr td img {
+  max-width: 64px;
+}
+#infographics table.stiky-table tr td img.thick {
+  /* width: 25px; */
+  margin: 0;
+}
+@media (min-width: 768px) {
+  #infographics table.stiky-table tr td img.thick {
+    /* width: 28px; */
+  }
+}
+#infographics table.stiky-table thead {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+#infographics table.stiky-table thead.fixed {
+  display: block;
+  position: absolute;
+  top: 0;
+}
+#infographics table.stiky-table thead tr th {
+  padding: 0.75rem 0.5rem;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  background-color: #1a1a1a;
+  flex-direction: column;
+}
+#infographics table.stiky-table thead tr th p {
+  margin-top: 0.25rem !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  font-weight: normal;
+  color: #fff;
+}
+#infographics table.stiky-table thead tr th .title {
+  margin-top: auto;
+  height: 2rem;
+}
+#infographics table.stiky-table thead tr th a {
+  display: block;
+  pointer-events: all;
+  cursor: pointer;
+  margin-top: auto;
+  text-decoration: none;
+  margin-top: 0.75rem;
+  background: #e0dede;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+#infographics table.stiky-table thead tr th span {
+  overflow: visible;
+  height: 50px;
+}
+#infographics table.stiky-table thead th, #infographics table.stiky-table tbody tr.false-head th {
+  height: 140px;
+}
+@media (min-width: 576px) {
+  #infographics table.stiky-table thead th, #infographics table.stiky-table tbody tr.false-head th {
+    height: 130px;
+  }
+}
+#infographics table.stiky-table tbody tr.false-head {
+  visibility: hidden;
+}
+#infographics table.stiky-table tbody tr:not(.false-head), #infographics table.stiky-table tbody td {
+  min-height: 4.5rem;
+  height: auto;
+}
+#infographics table.multi-row tbody tr > th:first-child, #infographics table.multi-row tbody tr > th:nth-child(2), #infographics table.multi-row tbody tr > td:nth-child(2) {
+  padding: 0.5rem 0 0.5rem 0.25rem;
+}
+#infographics table.multi-row tbody tr > th:first-child span, #infographics table.multi-row tbody tr > th:nth-child(2) span, #infographics table.multi-row tbody tr > td:nth-child(2) span {
+  transform: rotate(90deg) translateY(-12px);
+  transform-origin: bottom center;
+  width: 1.1rem;
+  overflow: visible;
+  height: 1.5rem;
+  white-space: nowrap;
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+@media (min-width: 768px) {
+  #infographics table.multi-row tbody tr > th:first-child span, #infographics table.multi-row tbody tr > th:nth-child(2) span, #infographics table.multi-row tbody tr > td:nth-child(2) span {
+    font-size: 2rem;
+  }
+}
+#infographics table.multi-row tbody tr > th:first-child table, #infographics table.multi-row tbody tr > th:nth-child(2) table, #infographics table.multi-row tbody tr > td:nth-child(2) table {
+  margin-left: auto;
+  margin-right: 0;
+  min-width: 90px;
+  width: 90px;
+  max-width: 90px;
+  flex: 1 1 90px;
+}
+#infographics table.multi-row tbody tr > th:first-child table td, #infographics table.multi-row tbody tr > th:nth-child(2) table td, #infographics table.multi-row tbody tr > td:nth-child(2) table td {
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  flex: 1 1 100%;
+  font-weight: bold;
+}
+@media (min-width: 321px) {
+  #infographics table.multi-row tbody tr > th:first-child table, #infographics table.multi-row tbody tr > th:nth-child(2) table, #infographics table.multi-row tbody tr > td:nth-child(2) table {
+    min-width: 100px;
+    width: 100px;
+    max-width: 100px;
+    flex: 1 1 100px;
+  }
+}
+@media (min-width: 768px) {
+  #infographics table.multi-row tbody tr > th:first-child table, #infographics table.multi-row tbody tr > th:nth-child(2) table, #infographics table.multi-row tbody tr > td:nth-child(2) table {
+    min-width: 125px;
+    width: 125px;
+    max-width: 125px;
+    flex: 1 1 125px;
+  }
+}
+#infographics table.multi-row tbody tr:last-child td {
+  flex-wrap: wrap;
+}
+
+#infographics .styky-table-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+  z-index: 2;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+#infographics .styky-table-overlay.hide {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  display: none !important;
+}
+#infographics .styky-table-overlay .animation {
+  width: 200px;
+  max-width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  max-height: 75vh;
+  user-select: none;
+  pointer-events: none;
+}
+#infographics .styky-table-overlay .continue {
+  user-select: none;
+  align-self: center;
+  cursor: pointer;
+  border: none;
+  height: 3rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+#infographics h3 > small > span {
+  font-size: 75%;
+  vertical-align: text-bottom;
+  line-height: 1.25;
+  margin-left: 0.1rem;
+}
+#infographics #styky-table-module,
+#infographics .styky-table-module {
+  display: block;
+  position: relative;
+  margin: 1.5rem auto 4rem;
+  overflow: hidden;
+  max-width: 100%;
+}
+#infographics #styky-table-module *,
+#infographics .styky-table-module * {
+  box-sizing: border-box;
+}
+#infographics #styky-table-module.parentesis .styky-table-overlay svg,
+#infographics .styky-table-module.parentesis .styky-table-overlay svg {
+  margin: 0 auto 1.5rem;
+  display: block;
+}
+#infographics #styky-table-module.parentesis .styky-table-overlay p,
+#infographics .styky-table-module.parentesis .styky-table-overlay p {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+#infographics #styky-table-module.parentesis table,
+#infographics .styky-table-module.parentesis table {
+  font-size: 0.8rem;
+  font-family: "Lato", sans-serif;
+}
+@media (min-width: 768px) {
+  #infographics #styky-table-module.parentesis table,
+#infographics .styky-table-module.parentesis table {
+    font-size: 1rem;
+  }
+}
+#infographics #styky-table-module.parentesis table th.axis,
+#infographics .styky-table-module.parentesis table th.axis {
+  background-color: #C82E41 !important;
+}
+#infographics #styky-table-module.parentesis table a,
+#infographics .styky-table-module.parentesis table a {
+  color: #C82E41;
+}
+#infographics #styky-table-module.parentesis table a.btn,
+#infographics .styky-table-module.parentesis table a.btn {
+  text-decoration: none;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: #C82E41;
+}
+@media (min-width: 576px) {
+  #infographics #styky-table-module.parentesis table a.btn,
+#infographics .styky-table-module.parentesis table a.btn {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+}
+#infographics #styky-table-module.parentesis table thead tr,
+#infographics .styky-table-module.parentesis table thead tr {
+  color: #fff;
+}
+#infographics #styky-table-module.parentesis table thead tr th,
+#infographics .styky-table-module.parentesis table thead tr th {
+  background-color: #1a1a1a;
+}
+#infographics #styky-table-module.parentesis table thead tr th .editrs-choice,
+#infographics .styky-table-module.parentesis table thead tr th .editrs-choice {
+  width: 2.5rem;
+  position: absolute;
+  top: 0.25rem;
+}
+#infographics #styky-table-module.parentesis table tbody th,
+#infographics .styky-table-module.parentesis table tbody th {
+  background-color: #4d4d4d;
+  color: #fff;
+}
+#infographics #styky-table-module.parentesis table tbody td,
+#infographics .styky-table-module.parentesis table tbody td {
+  background-color: #ECEBEB;
+  color: #1a1a1a;
+}
+#infographics #styky-table-module.parentesis table tbody tr:nth-child(odd) td,
+#infographics .styky-table-module.parentesis table tbody tr:nth-child(odd) td {
+  background-color: #e0dede;
+}
+#infographics #styky-table-module.parentesis thead th,
+#infographics .styky-table-module.parentesis thead th {
+  background-color: #1a1a1a;
+}
+#infographics #styky-table-module.parentesis table.stiky-table tr.false-head td,
+#infographics .styky-table-module.parentesis table.stiky-table tr.false-head td {
+  background-color: #4d4d4d;
+}
+
+#infographics {
+  font-family: "Lato", sans-serif;
+  max-width: calc(100vw - 20px);
+  width: 100%;
+  margin: 1rem auto;
+  background-color: #fbfbfb;
+}
+#infographics .editrs-choice {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/editors-choise.png);
+}
+#infographics .editrs-choice:before {
+  content: " ";
+  display: block;
+  padding-top: 100%;
+}
+#infographics, #infographics * {
+  box-sizing: border-box;
+}
+#infographics a {
+  color: #c82e41;
+}
+#infographics span.red {
+  color: #c82e41;
+}
+@media (min-width: 768px) {
+  #infographics {
+    max-width: 800px;
+  }
+}
+#infographics .data-table-collapse, #infographics .data-table-modal {
+  padding: 0 1rem;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+}
+#infographics .collapse, #infographics .modal-dataCard {
+  width: 100%;
+  margin-bottom: 1rem;
+  max-width: calc(50% - 0.5rem);
+  --ms--flex: 1 1 calc(50% - 0.5rem);
+  --webkit--flex: 1 1 calc(50% - 0.5rem);
+  flex: 1 1 calc(50% - 0.5rem);
+}
+#infographics .collapse:not(:nth-child(2n)), #infographics .modal-dataCard:not(:nth-child(2n)) {
+  margin-right: 1rem;
+}
+#infographics .collapse:nth-child(2n), #infographics .modal-dataCard:nth-child(2n) {
+  margin-right: 0;
+}
+@media (min-width: 768px) {
+  #infographics .collapse, #infographics .modal-dataCard {
+    max-width: calc(33% - 0.5rem);
+    --ms--flex: 1 1 calc(33% - 0.5rem);
+    --webkit--flex: 1 1 calc(33% - 0.5rem);
+    flex: 1 1 calc(33% - 0.5rem);
+  }
+  #infographics .collapse:not(:nth-child(3n)), #infographics .modal-dataCard:not(:nth-child(3n)) {
+    margin-right: 0.9rem;
+  }
+  #infographics .collapse:nth-child(3n), #infographics .modal-dataCard:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+#infographics .collapse button, #infographics .modal-dataCard button {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  outline: 0;
+}
+#infographics .collapse .collapse-btn, #infographics .modal-dataCard .collapse-btn {
+  padding-right: 1.5rem;
+}
+#infographics .collapse .collapse-btn .picture, #infographics .modal-dataCard .collapse-btn .picture {
+  margin-right: -1.5rem;
+}
+#infographics .collapse .collapse-btn::after, #infographics .modal-dataCard .collapse-btn::after {
+  content: "";
+  top: 75%;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/down-arrow.svg");
+  z-index: 2;
+}
+#infographics .collapse .collapse-btn, #infographics .collapse .modal-dataCard-btn, #infographics .modal-dataCard .collapse-btn, #infographics .modal-dataCard .modal-dataCard-btn {
+  width: 100%;
+  background-color: #C82E41;
+  color: #fff;
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+#infographics .collapse .collapse-btn.active, #infographics .collapse .modal-dataCard-btn.active, #infographics .modal-dataCard .collapse-btn.active, #infographics .modal-dataCard .modal-dataCard-btn.active {
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+#infographics .collapse .collapse-btn .editrs-choice, #infographics .collapse .modal-dataCard-btn .editrs-choice, #infographics .modal-dataCard .collapse-btn .editrs-choice, #infographics .modal-dataCard .modal-dataCard-btn .editrs-choice {
+  position: absolute;
+  width: 45px;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+}
+@media (min-width: 768px) {
+  #infographics .collapse .collapse-btn .editrs-choice, #infographics .collapse .modal-dataCard-btn .editrs-choice, #infographics .modal-dataCard .collapse-btn .editrs-choice, #infographics .modal-dataCard .modal-dataCard-btn .editrs-choice {
+    top: -10px;
+    left: -10px;
+    width: 65px;
+  }
+}
+@media (min-width: 768px) {
+  #infographics .collapse .collapse-btn::after, #infographics .collapse .modal-dataCard-btn::after, #infographics .modal-dataCard .collapse-btn::after, #infographics .modal-dataCard .modal-dataCard-btn::after {
+    right: 0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+#infographics .collapse .collapse-btn h1, #infographics .collapse .modal-dataCard-btn h1, #infographics .modal-dataCard .collapse-btn h1, #infographics .modal-dataCard .modal-dataCard-btn h1 {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  padding: 0.75rem 0.5rem;
+  --ms--flex: 1 1 100%;
+  --webkit--flex: 1 1 100%;
+  flex: 1 1 100%;
+  font-size: 0.85rem;
+  margin-top: 0;
+  margin-bottom: 0 !important;
+  color:#ffffff;
+}
+#infographics .collapse .collapse-btn h1 span, #infographics .collapse .modal-dataCard-btn h1 span, #infographics .modal-dataCard .collapse-btn h1 span, #infographics .modal-dataCard .modal-dataCard-btn h1 span {
+  font-size: 0.8rem;
+  display: block;
+  margin: 0.5rem auto 0;
+}
+#infographics .collapse .collapse-btn .picture, #infographics .collapse .modal-dataCard-btn .picture, #infographics .modal-dataCard .collapse-btn .picture, #infographics .modal-dataCard .modal-dataCard-btn .picture {
+  position: relative;
+  vertical-align: middle;
+  overflow: hidden;
+  height: 8rem;
+  width: calc(100% + 1.5rem);
+  max-width: calc(100% + 1.5rem);
+  align-items: center;
+  --ms--flex: 1 1 100%;
+  --webkit--flex: 1 1 100%;
+  flex: 1 1 100%;
+}
+@media (min-width: 768px) {
+  #infographics .collapse .collapse-btn .picture, #infographics .collapse .modal-dataCard-btn .picture, #infographics .modal-dataCard .collapse-btn .picture, #infographics .modal-dataCard .modal-dataCard-btn .picture {
+    width: calc(100% + 3.5rem);
+    max-width: calc(100% + 3.5rem);
+  }
+}
+#infographics .collapse .collapse-btn .picture img, #infographics .collapse .modal-dataCard-btn .picture img, #infographics .modal-dataCard .collapse-btn .picture img, #infographics .modal-dataCard .modal-dataCard-btn .picture img {
+  width: auto;
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: center;
+}
+#infographics .collapse .modal, #infographics .modal-dataCard .modal {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 999999999;
+  justify-content: center;
+  -ms-flex-pack: center;
+  align-content: center;
+}
+#infographics .collapse .modal.active, #infographics .modal-dataCard .modal.active {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+#infographics .collapse .modal .modal-overlay, #infographics .modal-dataCard .modal .modal-overlay {
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+#infographics .collapse .modal span.close, #infographics .modal-dataCard .modal span.close {
+  position: absolute;
+  top: 70px;
+  right: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-color: #c82e41;
+  background-image: url("../img/icons/close.svg");
+  border-radius: 50%;
+  z-index: 2;
+  cursor: pointer;
+}
+#infographics .collapse .modal span.close:hover, #infographics .modal-dataCard .modal span.close:hover {
+  background-color: #8a202d;
+}
+#infographics .collapse .modal-content, #infographics .modal-dataCard .modal-content {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  max-width: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 80vh;
+  overflow: auto;
+  margin: auto;
+  background-color: #ECEBEB;
+  border-radius: 1rem;
+  padding: 1rem;
+  z-index: 1;
+}
+#infographics .collapse .modal-content a.btn, #infographics .modal-dataCard .modal-content a.btn {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  #infographics .collapse .modal-content, #infographics .modal-dataCard .modal-content {
+    max-width: 600px;
+  }
+}
+@media (min-width: 768px) {
+  #infographics .collapse .modal-content.visible, #infographics .modal-dataCard .modal-content.visible {
+    overflow: visible !important;
+  }
+}
+#infographics .collapse .modal-content .editrs-choice, #infographics .modal-dataCard .modal-content .editrs-choice {
+  position: absolute;
+  width: 75px;
+  top: 0px;
+  left: 0px;
+}
+@media (min-width: 768px) {
+  #infographics .collapse .modal-content .editrs-choice, #infographics .modal-dataCard .modal-content .editrs-choice {
+    width: 90px;
+    top: -35px;
+    left: -25px;
+  }
+}
+@media (max-width: 767px) {
+  #infographics .collapse .modal-content.scroll::after, #infographics .modal-dataCard .modal-content.scroll::after {
+    content: "";
+    height: 20vh;
+    max-height: 120px;
+    font-size: 10px;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    display: block;
+    width: 100%;
+    background-position: center;
+    background-size: 2.5rem auto;
+    background-repeat: no-repeat;
+    background: url("../img/icons/scroll.gif") no-repeat center/2.5rem auto, -moz-linear-gradient(top, rgba(236, 235, 235, 0) 0%, rgba(236, 235, 235, 0.02) 1%, #ecebeb 50%, #ecebeb 99%);
+    /* FF3.6-15 */
+    background: url("../img/icons/scroll.gif") no-repeat center/2.5rem auto, -webkit-linear-gradient(top, rgba(236, 235, 235, 0) 0%, rgba(236, 235, 235, 0.02) 1%, #ecebeb 50%, #ecebeb 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: url("../img/icons/scroll.gif") no-repeat center/2.5rem auto, linear-gradient(to bottom, rgba(236, 235, 235, 0) 0%, rgba(236, 235, 235, 0.02) 1%, #ecebeb 50%, #ecebeb 99%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00ecebeb", endColorstr="#ecebeb",GradientType=0 );
+    /* IE6-9 */
+  }
+}
+#infographics .collapse .modal-content h1, #infographics .modal-dataCard .modal-content h1 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+@media (min-width: 768px) {
+  #infographics .collapse .modal-content h1, #infographics .modal-dataCard .modal-content h1 {
+    font-size: 1.75rem;
+  }
+}
+#infographics .collapse .modal-content h2, #infographics .modal-dataCard .modal-content h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  color: #4d4d4d;
+}
+@media (min-width: 768px) {
+  #infographics .collapse .modal-content h2, #infographics .modal-dataCard .modal-content h2 {
+    font-size: 1.25rem;
+  }
+}
+#infographics .collapse .modal-content li, #infographics .collapse .modal-content p, #infographics .modal-dataCard .modal-content li, #infographics .modal-dataCard .modal-content p {
+  line-height: normal;
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+}
+#infographics .collapse .modal-content a, #infographics .modal-dataCard .modal-content a {
+  color: #C82E41;
+}
+#infographics .collapse .modal-content.active, #infographics .modal-dataCard .modal-content.active {
+  padding: 0.5rem;
+}
+@media (min-width: 992px) {
+  #infographics .collapse .modal-content.active, #infographics .modal-dataCard .modal-content.active {
+    padding: 0.75rem;
+  }
+}
+@media (min-width: 1200px) {
+  #infographics .collapse .modal-content.active, #infographics .modal-dataCard .modal-content.active {
+    padding: 1rem;
+  }
+}
+#infographics .collapse .modal-content.active > *, #infographics .modal-dataCard .modal-content.active > * {
+  opacity: 1;
+}
+#infographics .collapse .collapse-content, #infographics .modal-dataCard .collapse-content {
+  background-color: #ECEBEB;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0;
+  border-radius: 0 0 0.75rem 0.75rem;
+  transition: max-height 0.5s ease-in-out;
+  background-color: #ECEBEB;
+}
+#infographics .collapse .collapse-content li, #infographics .collapse .collapse-content p, #infographics .modal-dataCard .collapse-content li, #infographics .modal-dataCard .collapse-content p {
+  line-height: normal;
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+}
+#infographics .collapse .collapse-content a, #infographics .modal-dataCard .collapse-content a {
+  color: #C82E41;
+}
+#infographics .collapse .collapse-content > *, #infographics .modal-dataCard .collapse-content > * {
+  transition: opacity 0.5s ease-in-out padding 0.5s ease-in-out;
+  opacity: 0;
+}
+#infographics .collapse .collapse-content.active, #infographics .modal-dataCard .collapse-content.active {
+  padding: 0.5rem;
+}
+@media (min-width: 992px) {
+  #infographics .collapse .collapse-content.active, #infographics .modal-dataCard .collapse-content.active {
+    padding: 0.75rem;
+  }
+}
+@media (min-width: 1200px) {
+  #infographics .collapse .collapse-content.active, #infographics .modal-dataCard .collapse-content.active {
+    padding: 1rem;
+  }
+}
+#infographics .collapse .collapse-content.active > *, #infographics .modal-dataCard .collapse-content.active > * {
+  opacity: 1;
+}
+#infographics .collapse .comparative, #infographics .modal-dataCard .comparative {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+#infographics .collapse .comparative .comparative-table, #infographics .modal-dataCard .comparative .comparative-table {
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  max-width: 100%;
+  --ms--flex: 1 1 100%;
+  --webkit--flex: 1 1 100%;
+  flex: 1 1 100%;
+}
+@media (min-width: 768px) {
+  #infographics .collapse .comparative .comparative-table, #infographics .modal-dataCard .comparative .comparative-table {
+    padding-left: 1rem;
+    max-width: 50%;
+    --ms--flex: 1 1 50%;
+    --webkit--flex: 1 1 50%;
+    flex: 1 1 50%;
+  }
+}
+#infographics .collapse .comparative .comparative-table::before, #infographics .modal-dataCard .comparative .comparative-table::before {
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto 1.5rem 0;
+}
+#infographics .collapse .comparative .good li, #infographics .modal-dataCard .comparative .good li {
+  list-style-image: url("../img/icons/good-icon.svg");
+}
+#infographics .collapse .comparative .good::before, #infographics .modal-dataCard .comparative .good::before {
+  content: "Lo bueno";
+  color: #8BC53F;
+}
+#infographics .collapse .comparative .bad li, #infographics .modal-dataCard .comparative .bad li {
+  list-style-image: url("../img/icons/bad-icon.svg");
+}
+#infographics .collapse .comparative .bad::before, #infographics .modal-dataCard .comparative .bad::before {
+  content: "Lo malo";
+  color: #ff3535;
+}
+
+.scroll-to, .middle-poll {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 1.5rem auto;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+.scroll-to h1, .scroll-to h2, .scroll-to h3, .scroll-to h4, .scroll-to h5, .scroll-to h6, .middle-poll h1, .middle-poll h2, .middle-poll h3, .middle-poll h4, .middle-poll h5, .middle-poll h6 {
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+.scroll-to:not(.answered) button:hover div, .middle-poll:not(.answered) button:hover div {
+  width: 100%;
+}
+.scroll-to.answered, .middle-poll.answered {
+  pointer-events: none;
+  cursor: auto;
+}
+.scroll-to.answered button span, .middle-poll.answered button span {
+  visibility: visible;
+}
+.scroll-to button, .middle-poll button {
+  --ms--flex: 1 1 calc(50% - 0.25rem);
+  --webkit--flex: 1 1 calc(50% - 0.25rem);
+  flex: 1 1 calc(50% - 0.25rem);
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  --ms--flex: 1 1 100%;
+  --webkit--flex: 1 1 100%;
+  flex: 1 1 100%;
+  position: relative;
+  cursor: pointer;
+  border: 0;
+  background-color: #F3FCFF;
+  color: #316d82;
+  border: 1px solid #316d82;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  min-height: 3rem;
+  width: 100%;
+  max-width: calc(50% - 0.25rem);
+  margin-bottom: 0.5rem;
+  -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
+@media (pointer: fine) and (hover: hover) {
+  .scroll-to button:hover, .middle-poll button:hover {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+}
+.scroll-to button.focus, .scroll-to button:focus, .middle-poll button.focus, .middle-poll button:focus {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.scroll-to button div, .middle-poll button div {
+  transition: width 0.5s ease-in;
+  background-color: #c0efff;
+  position: absolute;
+  z-index: 0;
+  width: 0;
+  max-width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+.scroll-to button p, .middle-poll button p {
+  display: block;
+  position: relative;
+  font-family: "Roboto", Helvetica, Arial, "sans-serif" !important;
+  font-weight: bold !important;
+  color: inherit !important;
+  width: 100%;
+  max-width: calc(100% - 0.5rem);
+  z-index: 1;
+  font-weight: normal;
+  font-size: 1rem !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-left: 0;
+  margin-right: 0;
+}
+.scroll-to button span, .middle-poll button span {
+  font-family: sans-serif;
+  font-size: 0.75rem;
+  visibility: hidden;
+  z-index: 1;
+  font-family: sans-serif;
+  background-color: #316d82;
+  color: #fff;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+  font-weight: bold;
+}
+.scroll-to .answer-a, .middle-poll .answer-a {
+  margin-right: 0.25rem;
+}
+.scroll-to .answer-a p, .middle-poll .answer-a p {
+  margin-right: 0.5rem;
+}
+.scroll-to .answer-a div, .middle-poll .answer-a div {
+  right: 0;
+}
+.scroll-to .answer-b, .middle-poll .answer-b {
+  margin-left: 0.25rem;
+}
+.scroll-to .answer-b p, .middle-poll .answer-b p {
+  margin-left: 0.5rem;
+}
+.scroll-to .answer-b span, .middle-poll .answer-b span {
+  float: left;
+  order: -1;
+}
+.scroll-to .answer-b div, .middle-poll .answer-b div {
+  left: 0;
+}
+@media (max-width: 425px) {
+  .scroll-to button, .middle-poll button {
+    max-width: 100%;
+    --ms--flex: 1 1 100%;
+    --webkit--flex: 1 1 100%;
+    flex: 1 1 100%;
+  }
+  .scroll-to button.answer-a, .middle-poll button.answer-a {
+    margin-right: 0;
+  }
+  .scroll-to button.answer-a p, .middle-poll button.answer-a p {
+    order: 1;
+    margin-left: 0.5rem;
+  }
+  .scroll-to button.answer-a span, .middle-poll button.answer-a span {
+    order: 0;
+  }
+  .scroll-to button.answer-a div, .middle-poll button.answer-a div {
+    left: 0;
+  }
+  .scroll-to button.answer-b, .middle-poll button.answer-b {
+    margin-left: 0;
+  }
+  .scroll-to button.answer-b p, .middle-poll button.answer-b p {
+    margin-left: 0.5rem;
+  }
+  .scroll-to button.answer-b div, .middle-poll button.answer-b div {
+    left: 0;
+  }
+}
+
+svg {
+  width: 100%;
+  max-width: 250px;
+}
+svg .hand {
+  transform-origin: center bottom;
+  animation-name: hand;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+svg .arrows {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes hand {
+  0% {
+    opacity: 0;
+    transform: rotate(5deg);
+  }
+  45% {
+    opacity: 1;
+    transform: rotate(5deg);
+  }
+  55% {
+    opacity: 1;
+    transform: rotate(-5deg);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes hand {
+  0% {
+    opacity: 0;
+    transform: rotate(5deg);
+  }
+  45% {
+    opacity: 1;
+    transform: rotate(5deg);
+  }
+  55% {
+    opacity: 1;
+    transform: rotate(-5deg);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes hand {
+  0% {
+    opacity: 0;
+    transform: rotate(5deg);
+  }
+  45% {
+    opacity: 1;
+    transform: rotate(5deg);
+  }
+  55% {
+    opacity: 1;
+    transform: rotate(-5deg);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes arrows {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes arrows {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes arrows {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .central_principal {
+    max-width: 100vw;
+  }
+}
+
+#infographics a.btn {
+  width: 150px;
+  padding: 0.75rem;
+  color: #fff;
+  margin: 0 0 0.5rem;
+  text-decoration: none;
+  background-color: #C82E41;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  border-bottom: 2px solid #8a202d;
+  text-align: center;
+}
+@media (pointer: fine) and (hover: hover) {
+  #infographics a.btn:hover {
+    background-color: #8a202d;
+  }
+  #infographics a.btn:hover .badge {
+    background-color: #d9d9d9;
+  }
+}
+#infographics a.btn .badge {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.25rem;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 0.5rem;
+}
+#infographics a.btn .badge img{
+
+}
+/*# sourceMappingURL=infographics.css.map */

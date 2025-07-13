@@ -1,0 +1,30 @@
+.blackBg{
+    background-color:#151518;
+}
+.greenBg{
+    background-color: #DDDB1C;
+}
+.pinkBg{
+    background-color: #B9007C;
+}
+.blueBg{
+    background-color: #009ADA;
+}
+.whiteBg{
+    background-color: #fff;
+}
+.blackFont{
+    color:#211915;
+}
+.greenFont{
+    color: #DDDB1C;
+}
+.pinkFont{
+    color: #B9007C;
+}
+.blueFont{
+    color: #009ADA;
+}
+.whiteFont{
+    color: #fff;
+}

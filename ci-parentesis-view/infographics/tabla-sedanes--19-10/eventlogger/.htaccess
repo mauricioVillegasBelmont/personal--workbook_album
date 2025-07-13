@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule !(^assets|^save$|^save.php$) - [L,R=404]
+RewriteRule (^save$) save.php

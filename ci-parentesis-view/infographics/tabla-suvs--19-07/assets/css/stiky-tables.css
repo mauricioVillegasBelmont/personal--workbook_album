@@ -1,0 +1,319 @@
+#styky-table-module, .styky-table-module {
+  display: block;
+  position: relative;
+  margin: 1.5rem auto;
+  overflow: hidden;
+}
+#styky-table-module *, .styky-table-module * {
+  box-sizing: border-box;
+}
+#styky-table-module table, #styky-table-module thead, #styky-table-module tbody, #styky-table-module th, #styky-table-module td, #styky-table-module tr, .styky-table-module table, .styky-table-module thead, .styky-table-module tbody, .styky-table-module th, .styky-table-module td, .styky-table-module tr {
+  display: block;
+}
+#styky-table-module table, .styky-table-module table {
+  overflow: auto;
+  width: 100%;
+  position: relative;
+  border-top: 1px solid transparent;
+  margin: 0 auto;
+}
+#styky-table-module table, #styky-table-module thead, .styky-table-module table, .styky-table-module thead {
+  position: unset;
+}
+#styky-table-module tr, .styky-table-module tr {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: visible;
+  position: unset;
+}
+#styky-table-module tr th, .styky-table-module tr th {
+  user-select: none;
+  pointer-events: none;
+  padding: 0.5rem;
+}
+#styky-table-module thead, .styky-table-module thead {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#styky-table-module thead th:nth-child(2), .styky-table-module thead th:nth-child(2) {
+  margin-left: 40vw;
+}
+@media (min-width: 768px) {
+  #styky-table-module thead th:nth-child(2), .styky-table-module thead th:nth-child(2) {
+    margin-left: 200px;
+  }
+}
+#styky-table-module thead.fixed, .styky-table-module thead.fixed {
+  display: block;
+  position: absolute;
+  top: 0;
+}
+#styky-table-module table.stiky-table th, #styky-table-module table.stiky-table td, .styky-table-module table.stiky-table th, .styky-table-module table.stiky-table td {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60vw;
+  width: 60vw;
+  max-width: 60vw;
+  flex: 1 1 60vw;
+  height: 80px;
+}
+@media (min-width: 768px) {
+  #styky-table-module table.stiky-table th, #styky-table-module table.stiky-table td, .styky-table-module table.stiky-table th, .styky-table-module table.stiky-table td {
+    width: 180px;
+    min-width: 180px;
+    max-width: 180px;
+    flex: 1 1 180px;
+  }
+}
+#styky-table-module table.stiky-table th img, #styky-table-module table.stiky-table td img, .styky-table-module table.stiky-table th img, .styky-table-module table.stiky-table td img {
+  width: 25px;
+}
+#styky-table-module table.stiky-table td:first-of-type, .styky-table-module table.stiky-table td:first-of-type {
+  margin-left: 40vw;
+}
+@media (min-width: 768px) {
+  #styky-table-module table.stiky-table td:first-of-type, .styky-table-module table.stiky-table td:first-of-type {
+    margin-left: 200px;
+  }
+}
+#styky-table-module table.stiky-table th:first-child, .styky-table-module table.stiky-table th:first-child {
+  position: absolute;
+  left: 0;
+  min-width: 40vw;
+  width: 40vw;
+  max-width: 40vw;
+  flex: 1 1 40vw;
+}
+@media (min-width: 768px) {
+  #styky-table-module table.stiky-table th:first-child, .styky-table-module table.stiky-table th:first-child {
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    flex: 1 1 200px;
+  }
+}
+#styky-table-module .styky-table-overlay, .styky-table-module .styky-table-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+  z-index: 100000;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+#styky-table-module .styky-table-overlay.hide, .styky-table-module .styky-table-overlay.hide {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  display: none !important;
+}
+#styky-table-module .styky-table-overlay .animation, .styky-table-module .styky-table-overlay .animation {
+  width: 400px;
+  max-width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  height: 500px;
+  max-height: 75vh;
+  user-select: none;
+  pointer-events: none;
+}
+#styky-table-module .styky-table-overlay .continue, .styky-table-module .styky-table-overlay .continue {
+  user-select: none;
+  align-self: center;
+  cursor: pointer;
+  border: none;
+  height: 3rem;
+  background-color: blue;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+}
+#styky-table-module svg, .styky-table-module svg {
+  width: 100%;
+}
+#styky-table-module svg .hand, .styky-table-module svg .hand {
+  transform-origin: center bottom;
+  animation-name: hand;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+#styky-table-module svg .arrows, .styky-table-module svg .arrows {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes hand {
+  0% {
+    opacity: 0;
+    transform: rotate(5deg);
+  }
+  45% {
+    opacity: 1;
+    transform: rotate(5deg);
+  }
+  55% {
+    opacity: 1;
+    transform: rotate(-5deg);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes hand {
+  0% {
+    opacity: 0;
+    transform: rotate(5deg);
+  }
+  45% {
+    opacity: 1;
+    transform: rotate(5deg);
+  }
+  55% {
+    opacity: 1;
+    transform: rotate(-5deg);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes hand {
+  0% {
+    opacity: 0;
+    transform: rotate(5deg);
+  }
+  45% {
+    opacity: 1;
+    transform: rotate(5deg);
+  }
+  55% {
+    opacity: 1;
+    transform: rotate(-5deg);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes arrows {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes arrows {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes arrows {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#styky-table-module.parentesis .styky-table-overlay svg, .styky-table-module.parentesis .styky-table-overlay svg {
+  margin-bottom: 1.5rem;
+}
+#styky-table-module.parentesis .styky-table-overlay p, .styky-table-module.parentesis .styky-table-overlay p {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+#styky-table-module.parentesis table, .styky-table-module.parentesis table {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+}
+#styky-table-module.parentesis table th.axis, .styky-table-module.parentesis table th.axis {
+  background-color: #C82E41 !important;
+}
+#styky-table-module.parentesis table thead tr, .styky-table-module.parentesis table thead tr {
+  color: #fff;
+}
+#styky-table-module.parentesis table thead tr th, .styky-table-module.parentesis table thead tr th {
+  background-color: #1a1a1a;
+}
+#styky-table-module.parentesis table tbody th, .styky-table-module.parentesis table tbody th {
+  background-color: #4d4d4d;
+  color: #fff;
+}
+#styky-table-module.parentesis table tbody td, .styky-table-module.parentesis table tbody td {
+  background-color: #ECEBEB;
+  color: #1a1a1a;
+}
+#styky-table-module.parentesis table tbody tr:nth-child(odd) td, .styky-table-module.parentesis table tbody tr:nth-child(odd) td {
+  background-color: #e0dede;
+}
+#styky-table-module.parentesis thead th, .styky-table-module.parentesis thead th {
+  background-color: #1a1a1a;
+}
+#styky-table-module.parentesis table.stiky-table tr.false-head td, .styky-table-module.parentesis table.stiky-table tr.false-head td {
+  background-color: #4d4d4d;
+}
+
+/*# sourceMappingURL=stiky-tables.css.map */

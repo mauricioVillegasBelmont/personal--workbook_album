@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "NespressoLucas";
+  font-style: normal;
+  font-weight: bolder;
+  src: url("../fonts/NespressoLucas-XtraBd.eot?#iefix") format("embedded-opentype"), url("../fonts/NespressoLucas-XtraBd.svg#NespressoLucas") format("svg"), url("../fonts/NespressoLucas-XtraBd.otf") format("opentype"), url("../fonts/NespressoLucas-XtraBd.ttf") format("truetype"), url("../fonts/NespressoLucas-XtraBd.woff") format("woff"), url("../fonts/NespressoLucas-XtraBd.woff2") format("woff2");
+}
+@font-face {
+  font-family: "NespressoLucas";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/NespressoLucas-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/NespressoLucas-Bold.svg#NespressoLucas") format("svg"), url("../fonts/NespressoLucas-Bold.otf") format("opentype"), url("../fonts/NespressoLucas-Bold.ttf") format("truetype"), url("../fonts/NespressoLucas-Bold.woff") format("woff"), url("../fonts/NespressoLucas-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "NespressoLucas";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/NespressoLucas-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/NespressoLucas-Regular.svg#NespressoLucas") format("svg"), url("../fonts/NespressoLucas-Regular.otf") format("opentype"), url("../fonts/NespressoLucas-Regular.ttf") format("truetype"), url("../fonts/NespressoLucas-Regular.woff") format("woff"), url("../fonts/NespressoLucas-Regular.woff2") format("woff2");
+}

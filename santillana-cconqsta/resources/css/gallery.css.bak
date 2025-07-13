@@ -1,0 +1,168 @@
+img.galleryItem {
+	max-width: 60%;
+	max-height: 350px;
+	cursor: pointer;
+}
+#gallery .slide {
+	position: relative;
+	height: 500px;
+}
+
+.slide{
+	-webkit-perspective: 650px; /* Chrome, Safari, Opera  */
+    		perspective: 650px;
+}
+.slide img.galleryItem{
+	-o-	object-fit: contain;
+	object-fit: contain;	
+	-o-	object-position: center;
+		object-position: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+}
+#gallery .currSlide{
+	max-height: 500px;
+	z-index: 500;
+	opacity: 1;
+	background-color: transparent;
+	-webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+	-ms-	transform: translate(-50%, -50%); /* IE 9 */
+    		transform: translate(-50%, -50%);
+}
+#gallery .nextpic,#gallery .backPic{
+	opacity: 0.7;
+	pointer-events: all !important;
+}
+
+#gallery .prevSlide{
+	-o-	object-position: right;
+		object-position: right;
+	width: auto;
+	height: 350px;
+	left: 0%;
+	pointer-events: none;
+    -webkit-transform: translateY(-50%) rotateY(75deg); /* Chrome, Safari, Opera */
+	-ms-	transform: translateY(-50%) rotateY(75deg); /* IE 9 */
+    		transform: translateY(-50%) rotateY(75deg);
+}
+#gallery .nextSlide{
+	-o-	object-position: left;
+		object-position: left;
+	width: auto;
+	height: 350px;
+	left: 75%;
+	pointer-events: none;
+    -webkit-transform: translateY(-50%) rotateY(-75deg); /* Chrome, Safari, Opera */
+	-ms-	transform: translateY(-50%) rotateY(-75deg); /* IE 9 */
+    		transform: translateY(-50%) rotateY(-75deg);
+}
+
+#gallery .nextSlide:nth-child(1){z-index:9;}
+#gallery .nextSlide:nth-child(2){z-index:8;}
+#gallery .nextSlide:nth-child(3){z-index:7;}
+#gallery .nextSlide:nth-child(4){z-index:6;}
+#gallery .nextSlide:nth-child(5){z-index:5;}
+#gallery .nextSlide:nth-child(6){z-index:4;}
+#gallery .nextSlide:nth-child(7){z-index:3;}
+#gallery .nextSlide:nth-child(8){z-index:2;}
+#gallery .nextSlide:nth-child(9){z-index:1;}
+
+
+#sliderRangeControl {
+	position: absolute;
+	bottom:0;
+	left:0;
+	height: 10px;
+	width: 100%;
+	z-index: 1000;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: rgb(111, 155, 214);
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: rgb(142, 107, 173);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.6px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgb(111, 155, 214);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: rgb(111, 155, 214);
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #65001c;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 39px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: rgb(111, 155, 214);
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: rgb(111, 155, 214);
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #65001c;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: rgb(111, 155, 214);
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: rgb(111, 155, 214);
+}

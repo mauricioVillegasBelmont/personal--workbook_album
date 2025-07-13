@@ -1,0 +1,25 @@
+.side_menu{
+  @extend %background-repeat;
+  @extend %background-cover;
+  background-image: url('../img/bg/fondo-parallax.png');
+  &.opened{
+    box-shadow: 5px 0 5px rgba(0,0,0,.5);
+  }
+  header{
+    padding: .5rem 0;
+    // margin-bottom: 1.5rem;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  .side_menu_nav{
+    background-color: rgba(214,214,214,.75);
+    padding: .5rem 0 1rem;
+    .side_menu_nav_item{
+      padding: .5rem 0 .5rem 1rem;
+      &:not(:last-child){
+        border-bottom: 1px solid color_var('red');
+      }
+    }
+  }
+}

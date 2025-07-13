@@ -1,0 +1,43 @@
+#styky_nav,.styky_nav{
+  @extend %position-sticky;
+  top: 0;
+  z-index: 100;
+  &.scrolled{
+    background-color: rgba(255, 255, 255, .6);
+  }
+  .upper_controls{
+    padding: 1rem .75rem;
+    // padding: .5rem .75rem;
+    .inline_btn{
+      font-size: 1rem;
+      @include media-breakpoint-up(md){
+        font-size: 1.5rem;
+      }
+      &.bck_step:before {
+        content:"\2039";
+      }
+    }
+
+    .lang_btn_wrapper{
+      margin: 0 0 0 auto;
+    }
+    .back_btn_wrapper{
+      @extend %display-none;
+      margin: 0 auto 0 0;
+    }
+  }
+}
+#main_header,.main_header{
+  background-color: color_var("light-gray");
+  .main_logo{
+    @extend %display-block;
+    @extend %width-100;
+    @extend %margin-0-auto;
+    max-width: calc(40% + 1.5rem);
+    padding: .5rem .75rem 1rem;
+    cursor: pointer;
+    @include media-breakpoint-up(lg){
+      max-width: 420px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="cellphone-screen-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.fill-white{fill:#ffffff;}
+	.gradient-path{clip-path:url(#notch-clip-path);fill:rgba(225,225,225,0.5)}
+</style>
+<path id="XMLID_41_" class="fill-white" d="M70,3.9H30.3c0,0-8.7,0.2-8.7,8.5v74.3c0,8.3,8.7,8.7,8.7,8.7H70c0,0,8.5-0.5,8.5-8.7V12.4
+	C78.5,4.1,70,3.9,70,3.9z M71.7,87.3H28.3c-1.8,0-3.2-1.3-3.2-3v-72c0-1.7,1.4-3,3.2-3h9v0.1c0,0.5,0.6,1.2,1.1,1.2h3.9h16.2h3.9
+	c0.5,0,1.5-0.7,1.5-1.2V9.3h7.6c1.8,0,3.2,1.3,3.2,3v72C74.9,85.9,73.4,87.3,71.7,87.3z"/>
+<g id="XMLID_69_">
+	<defs>
+		<path id="XMLID_67_" d="M71.7,87.2H28.3c-1.8,0-3.2-1.3-3.2-3v-72c0-1.7,1.4-3,3.2-3h9v0.1c0,0.5,0.6,1.2,1.1,1.2h3.9h16.2h3.9
+			c0.5,0,1.5-0.7,1.5-1.2V9.2h7.6c1.8,0,3.2,1.3,3.2,3v72C74.9,85.8,73.4,87.2,71.7,87.2z"/>
+	</defs>
+	<clipPath id="notch-clip-path">
+		<use xlink:href="#XMLID_67_"  style="overflow:visible;"/>
+	</clipPath>
+	<!-- <linearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="-1255.9301" y1="1269.5052" x2="-1239.6346" y2="1269.5052" gradientTransform="matrix(4.489659e-11 -1 1 4.489659e-11 -1219.2212 -1152.9886)">
+		<stop  offset="0.1" style="stop-color:#ffffff;stop-opacity:0"/>
+		<stop  offset="0.3" style="stop-color:#ffffff"/>
+		<stop  offset="0.7" style="stop-color:#ffffff"/>
+		<stop  offset="0.9" style="stop-color:#ffffff;stop-opacity:0"/>
+	</linearGradient> -->
+	<rect id="" x="22" y="86.6" class="gradient-path" width="56" height="16">
+		<animate
+			attributeName="y"
+			from="90"
+			to="-16"
+			dur="3s"
+			repeatCount="indefinite"
+		/>
+	</rect>
+</g>
+</svg>

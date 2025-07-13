@@ -1,0 +1,24 @@
+[submodule "santillana-cconqsta"]
+	path = santillana-cconqsta
+	url = https://github.com/mauricioVillegasBelmont/CCONQSTA
+[submodule "santillana-snme01"]
+	path = santillana-snme01
+	url = https://github.com/mauricioVillegasBelmont/SNME01
+[submodule "santillana-tdcgree"]
+	path = santillana-tdcgree
+	url = https://github.com/mauricioVillegasBelmont/tdcgree
+[submodule "santillana-pdqesc"]
+	path = santillana-pdqesc
+	url = https://github.com/mauricioVillegasBelmont/pdqesc
+[submodule "pyme-scrollytelling"]
+	path = pyme-scrollytelling
+	url = https://github.com/mauricioVillegasBelmont/revealAnim-preview.git
+[submodule "personal-portfolio-fish"]
+	path = personal-portfolio-fish
+	url = https://github.com/mauricioVillegasBelmont/portfolio-fish.git
+[submodule "ci-TechnicalTest-layout"]
+	path = ci-TechnicalTest-layout
+	url = https://github.com/mauricioVillegasBelmont/demo-parentesis-com.git
+[submodule "calculadoraAhorro_webModule"]
+	path = calculadoraAhorro_webModule
+	url = https://github.com/mauricioVillegasBelmont/web_module_sample.git

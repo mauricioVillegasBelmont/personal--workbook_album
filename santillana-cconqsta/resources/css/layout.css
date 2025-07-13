@@ -1,0 +1,318 @@
+html,body{
+    width:  100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    /*background: url(../img/bg.jpg) center/cover no-repeat;*/
+    background-image: url(../img/bg2.jpg);
+    background-position:  0% 50%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    -webkit-transition:background-position 1.5s ease;  
+    -moz-   transition:background-position 1.5s ease;  
+    -o-     transition:background-position 1.5s ease;  
+            transition:background-position 1.5s ease; 
+}
+body *{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    -webkit-transition: all 1.5s ease; /* Safari */
+            transition: all 1.5s ease;
+}
+
+section{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 5% 1%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 150px;
+            perspective: 150px;
+}
+
+section:first-child{
+    padding: 0;
+}
+
+section::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #333;
+}
+
+section::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: #666;
+}
+
+section::-webkit-scrollbar-thumb
+{
+	background-color: #562856;
+}
+.floatLayout .slideWrapper span,.floatLayout .slideWrapper p b,.floatLayout .slideWrapper p i{
+    float: none;
+}
+.floatLayout .slideWrapper p span{
+    float: none;
+}
+
+
+img{
+    width: auto;
+    height: auto;
+}
+<<<<<<< HEAD
+
+=======
+img.fix{
+	/*object-position: left;
+	object-fit: contain;*/
+}
+>>>>>>> refs/remotes/origin/master
+h1,
+h2{
+    font-family: 'header';
+    font-size: 2.2em;
+    color: #fff;
+}
+
+h3 {
+    font-family: 'header';
+    font-size: 1.7em;
+    color: #fff;
+}
+h4{
+    font-family: 'header';
+    font-size: 1.5em;
+    color: #fff;
+}
+
+h5{
+    font-family: 'header';
+    font-size: 1.2em;
+    color: #fff;
+}
+h6{
+    font-family: 'header';
+    font-size: 1em;
+    color: #fff;
+} 
+aside h1,
+aside h2,
+aside h3{
+    position: relative;
+    left: -45px;
+    padding-left: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #B9007C;
+    color: #fff;
+    -webkit-border-radius: 0px 10px 10px 0px;
+    -moz-   border-radius: 0px 10px 10px 0px;
+            border-radius: 0px 10px 10px 0px;
+}
+aside h1 span, h1 span,
+aside h2 span, h2 span,
+aside h3 span, h3 span,
+h4 span,
+h5 span,
+h6 span{
+    display: block;
+    font-size: 80%;
+}
+p, li{
+    font-family: 'body';
+    font-size: 1em;
+    color: #fff;
+    font-weight: normal;
+}
+
+p .boldItalic, li .boldItalic{
+    font-family: 'body';
+    font-size: 100%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+table{
+    border-collapse:collapse;
+    border-spacing: 0;
+}
+
+table, tr{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+table tr td{
+    text-align: left;
+    height: 4em;
+    vertical-align: middle;
+    padding: 10px;
+    font-family: 'body';
+    font-size: 1.2em;
+    border-bottom: 2px solid rgba(255, 255, 255,0.2);
+}
+table tr:first-child td{
+    font-weight: bold;
+    /*text-align: center;*/
+    /*border-right: 1px solid rgba(120, 120, 120,0.8);*/
+    
+}
+table tr td:first-child{
+    /*border-right: 1px solid rgba(255, 255, 255,0.5);*/
+    
+}
+table.age tr:last-child td, table.age tr:first-child td{
+    border-right: none;
+    border-bottom: none;
+    background-color: rgba(255, 255, 255,0.5);
+    
+}
+table tr:last-child td:last-child{
+}
+.floatColums{
+    height: 100%;
+}
+.col{
+    padding: 15px 25px;
+    height: auto;
+}
+.floatColums .col{
+    float: left;
+}
+
+video{
+    -o- object-fit: fill;
+        object-fit: fill;
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.noWrap{
+    white-space: nowrap;
+}
+.wrap{
+    white-space:normal;
+}
+
+.col-100{
+    width: 100%;
+}
+.col-70{
+    width: 70%;
+}
+.col-60{
+    width: 60%;
+}
+.col-55{
+    width: 55%;
+}
+.col-50{
+    width: 50%;
+}
+.col-45{
+    width: 45%;
+}
+.col-40{
+    width: 40%;
+}
+.col-35{
+    width: 35%;
+}
+.col-30{
+    width: 30%;
+}
+.col-25{
+    width: 25%;
+}
+.col-20{
+    width: 20%;
+}
+.col-15{
+    width: 15%;
+}
+.col-10{
+    width: 10%;
+}
+.col-05{
+    width: 5%;
+}
+.col-00{
+    width: 0%;
+}
+
+.h100{
+    height: 100%;
+}
+.h90{
+    height: 90%;
+}
+.h80{
+    height: 80%;
+}
+.h70{
+    height: 70%;
+}
+.h60{
+    height: 60%;
+}
+.h50{
+    height: 50%;
+}
+.h40{
+    height: 40%;
+}
+.h30{
+    height: 30%;
+}
+.h20{
+    height: 20%;
+}
+.h10{
+    height: 10%;
+}
+.hAuto{
+    height: auto;
+}
+/*-------------------------------*/
+.col-w-13{
+    width: calc(100% / 13);
+}
+.col-w-12{
+    width: calc(100% / 12);
+}
+.col-h-12{
+    height: calc(100% / 12);
+}
+.col-w-11{
+    width: calc(100% / 11);
+}
+.col-w-9{
+    width: calc(100% / 9);
+}
+.col-w-6{
+    width: calc(100% / 6)
+}
+.col-h-6{
+    height: calc(100% / 6);
+}
+.col-h-5{
+    height: calc(100% / 5);
+}
+.col-w-3{
+    width: calc(100% / 3);
+}
+.col-h-3{
+    height: calc(100% / 3);
+}
+/*----------*/

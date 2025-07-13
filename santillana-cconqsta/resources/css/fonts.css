@@ -1,0 +1,38 @@
+
+@font-face {
+    font-family: 'header';
+    src: url('../fonts/Museo-500.woff2') format('woff2'),
+       url('../fonts/Museo-500.woff') format('woff'),
+       url('../fonts/Museo-500.eot')  format('eot'),
+       url('../fonts/Museo-500.otf')  format('otf');
+}
+@font-face {
+    font-family: 'body';
+    src: url('../fonts/GOTHIC.woff2') format('woff2'),
+       url('../fonts/GOTHIC.woff') format('woff'),
+       url('../fonts/GOTHIC.ttf')  format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'body';
+    src: url('../fonts/GOTHICB.woff2') format('woff2'),
+       url('../fonts/GOTHICB.woff') format('woff'),
+       url('../fonts/GOTHICB.ttf')  format('truetype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'body';
+    src: url('../fonts/GOTHICI.woff2') format('woff2'),
+       url('../fonts/GOTHICI.woff') format('woff'),
+       url('../fonts/GOTHICI.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'body';
+    src: url('../fonts/GOTHICBI.woff2') format('woff2'),
+       url('../fonts/GOTHICBI.woff') format('woff'),
+       url('../fonts/GOTHICBI.ttf')  format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}

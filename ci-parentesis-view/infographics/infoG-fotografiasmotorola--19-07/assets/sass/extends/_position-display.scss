@@ -1,0 +1,31 @@
+// position
+%position-relative{
+  position: relative;
+}
+%position-absolute{
+  position: absolute;
+}
+%position-fixed{
+  position: fixed;
+}
+%position-sticky{
+  position: -webkit-sticky;
+  position: -ms-sticky;
+  position: sticky;
+}
+// display
+%display-block{
+  display: block;
+}
+%display-none{
+  display: none;
+}
+%display-inline{
+  display: inline;
+}
+%display-inline-block{
+  display: inline-block;
+}
+%display-grid{
+  display: grid;
+}

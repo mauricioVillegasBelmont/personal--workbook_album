@@ -1,0 +1,17 @@
+//$flex-prefixes: webkit-box moz-box webkit moz;
+$flex-prefixes:false;
+$box-layout-radious:1rem;
+
+$gutter:1.5rem;
+
+$unit: 1rem;
+
+$general-border-radius: 0.25rem;
+
+$zindex-dropdown:          1040;
+$zindex-sticky:            1020;
+$zindex-fixed:             1030;
+$zindex-modal-backdrop:    1040;
+$zindex-modal:             1050;
+$zindex-popover:           1060;
+$zindex-tooltip:           1070;

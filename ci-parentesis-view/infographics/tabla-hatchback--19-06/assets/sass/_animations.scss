@@ -1,0 +1,55 @@
+svg{
+  width: 100%;
+  .hand{
+    transform-origin: center bottom;
+    animation-name: hand;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+  }
+  .arrows{
+    //animation-name: arrows;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+  }
+}
+@include keyframes(hand){
+  0%{
+    opacity: 0;
+    transform: rotate(5deg);
+  }
+  45%{
+    opacity: 1;
+    transform: rotate(5deg);
+  }
+  55%{
+    opacity: 1;
+    transform: rotate(-5deg);
+  }
+  80%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@include keyframes(arrows){
+  0%{
+    opacity: 1;
+  }
+  40%{
+    opacity: 0;
+  }
+  60%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}

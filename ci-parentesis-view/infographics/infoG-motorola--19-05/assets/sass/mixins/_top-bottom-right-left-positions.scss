@@ -1,0 +1,17 @@
+@mixin trbl_position($t:false,$r:false,$b:false,$l:false,$m:false){
+  @if($t){
+    top: $t;
+  }
+  @if($r){
+    right: $r;
+  }
+  @if($l){
+    left: $l;
+  }
+  @if($b){
+    bottom: $b;
+  }
+  @if($m){
+    margin: $m;
+  }
+}

@@ -1,0 +1,4 @@
+#main_header .row,
+#step_3 .step_title + .row{
+  flex-direction: column !important;
+}

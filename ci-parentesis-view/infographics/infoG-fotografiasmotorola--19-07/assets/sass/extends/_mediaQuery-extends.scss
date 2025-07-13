@@ -1,0 +1,383 @@
+@include media-breakpoint-up(sm){
+  // position
+  %position-relative-sm{
+    position: relative;
+  }
+  %position-absolute-sm{
+    position: absolute;
+  }
+  %position-fixed-sm{
+    position: fixed;
+  }
+  %position-sticky-sm{
+    position: -webkit-sticky;
+    position: -ms-sticky;
+    position: sticky;
+  }
+  // display
+  %display-block-sm{
+    display: block;
+  }
+  %display-none-sm{
+    display: none;
+  }
+  %display-inline-sm{
+    display: inline;
+  }
+  %display-inline-block-sm{
+    display: inline-block;
+  }
+  %display-grid-sm{
+    display: grid;
+  }
+  %display-flex-sm{
+    @include flexbox();
+  }
+
+  %justify-center-sm{
+    @include justify-content(center);
+  }
+  %justify-between-sm{
+    @include justify-content(space-between);
+  }
+  %justify-around-sm{
+    @include justify-content(space-around);
+  }
+  %justify-end-sm{
+    @include justify-content(flex-end);
+  }
+  %justify-start-sm{
+    @include justify-content(flex-start);
+  }
+  %align-center-sm{
+    @include align-items(center);
+  }
+  %align-end-sm{
+    @include align-items(flex-end);
+  }
+  %align-start-sm{
+    @include align-items(flex-start);
+  }
+  %align-stretch-sm{
+    @include align-items(stretch);
+  }
+  %flex-column-sm{
+    @include flex-direction(column);
+  }
+  %flex-row-sm{
+    @include flex-direction(row);
+  }
+  %flex-wrap-sm{
+    @include flex-wrap(wrap);
+  }
+  %flex-no-wrap-sm{
+    @include flex-wrap(nowrap);
+  }
+}
+
+
+@include media-breakpoint-up(md){
+  // position
+  %position-relative-md{
+    position: relative;
+  }
+  %position-absolute-md{
+    position: absolute;
+  }
+  %position-fixed-md{
+    position: fixed;
+  }
+  %position-sticky-md{
+    position: -webkit-sticky;
+    position: -ms-sticky;
+    position: sticky;
+  }
+  // display
+  %display-block-md{
+    display: block;
+  }
+  %display-none-md{
+    display: none;
+  }
+  %display-inline-md{
+    display: inline;
+  }
+  %display-inline-block-md{
+    display: inline-block;
+  }
+  %display-grid-md{
+    display: grid;
+  }
+  %display-flex-md{
+    @include flexbox();
+  }
+
+  %justify-center-md{
+    @include justify-content(center);
+  }
+  %justify-between-md{
+    @include justify-content(space-between);
+  }
+  %justify-around-md{
+    @include justify-content(space-around);
+  }
+  %justify-end-md{
+    @include justify-content(flex-end);
+  }
+  %justify-start-md{
+    @include justify-content(flex-start);
+  }
+  %align-center-md{
+    @include align-items(center);
+  }
+  %align-end-md{
+    @include align-items(flex-end);
+  }
+  %align-start-md{
+    @include align-items(flex-start);
+  }
+  %align-stretch-md{
+    @include align-items(stretch);
+  }
+  %flex-column-md{
+    @include flex-direction(column);
+  }
+  %flex-row-md{
+    @include flex-direction(row);
+  }
+  %flex-wrap-md{
+    @include flex-wrap(wrap);
+  }
+  %flex-no-wrap-md{
+    @include flex-wrap(nowrap);
+  }
+}
+@include media-breakpoint-up(lg){
+  // position
+  %position-relative-lg{
+    position: relative;
+  }
+  %position-absolute-lg{
+    position: absolute;
+  }
+  %position-fixed-lg{
+    position: fixed;
+  }
+  %position-sticky-lg{
+    position: -webkit-sticky;
+    position: -ms-sticky;
+    position: sticky;
+  }
+  // display
+  %display-block-lg{
+    display: block;
+  }
+  %display-none-lg{
+    display: none;
+  }
+  %display-inline-lg{
+    display: inline;
+  }
+  %display-inline-block-lg{
+    display: inline-block;
+  }
+  %display-grid-lg{
+    display: grid;
+  }
+  %display-flex-lg{
+    @include flexbox();
+  }
+
+  %justify-center-lg{
+    @include justify-content(center);
+  }
+  %justify-between-lg{
+    @include justify-content(space-between);
+  }
+  %justify-around-lg{
+    @include justify-content(space-around);
+  }
+  %justify-end-lg{
+    @include justify-content(flex-end);
+  }
+  %justify-start-lg{
+    @include justify-content(flex-start);
+  }
+  %align-center-lg{
+    @include align-items(center);
+  }
+  %align-end-lg{
+    @include align-items(flex-end);
+  }
+  %align-start-lg{
+    @include align-items(flex-start);
+  }
+  %align-stretch-lg{
+    @include align-items(stretch);
+  }
+  %flex-column-lg{
+    @include flex-direction(column);
+  }
+  %flex-row-lg{
+    @include flex-direction(row);
+  }
+  %flex-wrap-lg{
+    @include flex-wrap(wrap);
+  }
+  %flex-no-wrap-lg{
+    @include flex-wrap(nowrap);
+  }
+
+}
+@include media-breakpoint-up(xl){
+  // position
+  %position-relative-xl{
+    position: relative;
+  }
+  %position-absolute-xl{
+    position: absolute;
+  }
+  %position-fixed-xl{
+    position: fixed;
+  }
+  %position-sticky-xl{
+    position: -webkit-sticky;
+    position: -ms-sticky;
+    position: sticky;
+  }
+  // display
+  %display-block-xl{
+    display: block;
+  }
+  %display-none-xl{
+    display: none;
+  }
+  %display-inline-xl{
+    display: inline;
+  }
+  %display-inline-block-xl{
+    display: inline-block;
+  }
+  %display-grid-xl{
+    display: grid;
+  }
+  %display-flex-xl{
+    @include flexbox();
+  }
+
+  %justify-center-xl{
+    @include justify-content(center);
+  }
+  %justify-between-xl{
+    @include justify-content(space-between);
+  }
+  %justify-around-xl{
+    @include justify-content(space-around);
+  }
+  %justify-end-xl{
+    @include justify-content(flex-end);
+  }
+  %justify-start-xl{
+    @include justify-content(flex-start);
+  }
+  %align-center-xl{
+    @include align-items(center);
+  }
+  %align-end-xl{
+    @include align-items(flex-end);
+  }
+  %align-start-xl{
+    @include align-items(flex-start);
+  }
+  %align-stretch-xl{
+    @include align-items(stretch);
+  }
+  %flex-column-xl{
+    @include flex-direction(column);
+  }
+  %flex-row-xl{
+    @include flex-direction(row);
+  }
+  %flex-wrap-xl{
+    @include flex-wrap(wrap);
+  }
+  %flex-no-wrap-xl{
+    @include flex-wrap(nowrap);
+  }
+}
+@include media-breakpoint-up(xx){
+  // position
+  %position-relative-xx{
+    position: relative;
+  }
+  %position-absolute-xx{
+    position: absolute;
+  }
+  %position-fixed-xx{
+    position: fixed;
+  }
+  %position-sticky{
+    position: -webkit-sticky;
+    position: -ms-sticky;
+    position: sticky;
+  }
+  // display
+  %display-block-xx{
+    display: block;
+  }
+  %display-none-xx{
+    display: none;
+  }
+  %display-inline-xx{
+    display: inline;
+  }
+  %display-inline-block-xx{
+    display: inline-block;
+  }
+  %display-grid-xx{
+    display: grid;
+  }
+  %display-flex-xx{
+    @include flexbox();
+  }
+
+  %justify-center-xx{
+    @include justify-content(center);
+  }
+  %justify-between-xx{
+    @include justify-content(space-between);
+  }
+  %justify-around-xx{
+    @include justify-content(space-around);
+  }
+  %justify-end-xx{
+    @include justify-content(flex-end);
+  }
+  %justify-start-xx{
+    @include justify-content(flex-start);
+  }
+  %align-center-xx{
+    @include align-items(center);
+  }
+  %align-end-xx{
+    @include align-items(flex-end);
+  }
+  %align-start-xx{
+    @include align-items(flex-start);
+  }
+  %align-stretch-xx{
+    @include align-items(stretch);
+  }
+  %flex-column-xx{
+    @include flex-direction(column);
+  }
+  %flex-row-xx{
+    @include flex-direction(row);
+  }
+  %flex-wrap-xx{
+    @include flex-wrap(wrap);
+  }
+  %flex-no-wrap-xx{
+    @include flex-wrap(nowrap);
+  }
+}

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'SamsungOne-700';
+  src: url('SamsungOne-700.eot');
+  src: url('SamsungOne-700.woff2') format('woff2'),
+       url('SamsungOne-700.woff') format('woff'),
+       url('SamsungOne-700.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

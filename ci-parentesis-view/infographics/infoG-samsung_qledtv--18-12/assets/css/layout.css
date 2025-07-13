@@ -1,0 +1,143 @@
+@media only screen and (min-width: 9em) and (max-width: 30em){
+
+  #infographic .contents{
+    /* top: -10vw; */
+  }
+  #infographic .contents .content{
+    flex-direction: column;
+  }
+  #infographic .contents .content *{
+    max-width: 100%;
+  }
+  #infographic .contents .content .ilustration{
+    order: 0;
+    flex-direction: row;
+    top: -2rem;
+  }
+  #infographic .contents .content .ilustration span{
+    align-self: flex-end;
+  }
+  #infographic .contents .content .ilustration svg{
+    height: 5rem;
+  }
+  #infographic .contents .content .ilustration img{
+    height: 10rem;
+  }
+  #infographic .contents .info{
+    /* width: 100%; */
+  }
+  #infographic .contents .info img{
+    margin-right: 1rem !important;
+  }
+  #infographic .contents .info img{
+    float: left;
+    left: -1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+
+@media only screen and (min-width: 30.2em) and (max-width: 48em) {
+  #infographic .contents{
+    /* top: -30vw; */
+  }
+  #infographic .contents .content{
+    flex-direction: row;
+  }
+  #infographic .contents .content *{
+    /* max-width: 100%; */
+  }
+  #infographic .contents .content:nth-child(odd) .ilustration{
+    order: 1;
+  }
+  #infographic .contents .content:nth-child(odd) .ilustration img{
+    margin-left: auto;
+  }
+  #infographic .contents .content:nth-child(even) .ilustration{
+    order: 0;
+  }
+  #infographic .contents .content:nth-child(odd) .ilustration img{
+    margin-right: auto;
+  }
+  #infographic .contents .content .ilustration{
+    order: 0;
+    height: auto;
+    flex-direction: column;
+    padding: 1rem;
+    top: -12.5%;
+  }
+  #infographic .contents .content .ilustration svg{
+    height: 11rem;
+    order: 1;
+  }
+  #infographic .contents .content .ilustration img{
+    min-height: 16rem;
+  }
+  #infographic .contents .content .ilustration span{
+    order: 0;
+    align-self: center;
+  }
+  #infographic .contents .info{
+    /* width: 100%; */
+  }
+  #infographic .contents .info img{
+    float: left;
+    left: -1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 48.2em)  {
+  #infographic .contents{
+    /* top: -25vh; */
+  }
+  #infographic .contents .content{
+    flex-direction: row;
+  }
+  #infographic .contents .content *{
+    max-width: 100%;
+  }
+  #infographic .contents .content:nth-child(odd) .ilustration{
+    order: 1;
+    right: 0rem;
+  }
+  #infographic .contents .content:nth-child(odd) .ilustration img{
+    margin-left: auto;
+  }
+  #infographic .contents .content:nth-child(even) .ilustration{
+    order: 0;
+    left: -2rem;
+  }
+  #infographic .contents .content:nth-child(odd) .ilustration img{
+    margin-right: auto;
+  }
+  #infographic .contents .content .ilustration{
+    order: 0;
+    height: auto;
+    flex-direction: column;
+    padding: 1rem;
+    top: -25%;
+  }
+  #infographic .contents .content .ilustration svg{
+    height: 11rem;
+    order: 1;
+  }
+  #infographic .contents .content .ilustration img{
+
+  }
+  #infographic .contents .content .ilustration span{
+    order: 0;
+    align-self: center;
+  }
+  #infographic .contents .info{
+    width: 100%;
+  }
+  #infographic .contents .info img{
+    float: left;
+    left: -1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+}

@@ -1,0 +1,119 @@
+table, thead, tbody, th, td, tr{
+  display: block;
+  text-align: center;
+}
+table{
+  overflow: auto;
+  width: 100%;
+  max-width: 100%;
+  position: unset;
+  border-top: 1px solid transparent;
+  margin: 0 auto;
+  @include media-breakpoint-up(md){
+  }
+}
+tr{
+  @include flexbox();
+  flex-wrap: nowrap;
+  overflow: visible;
+  position:unset;
+  th{
+    user-select: none;
+    pointer-events: none;
+    padding: 0.5rem;
+    @media (min-width: 768px){
+      padding: 1rem;
+    }
+  }
+}
+
+table.stiky-table{
+  thead{
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: none;
+    pointer-events: none;
+    th{
+      padding: 0.75rem 0.5rem;
+      @include flexbox();
+      background-color: #1a1a1a;
+      flex-direction: column;
+      a{
+        display: block;
+        pointer-events:all;
+        cursor: pointer;
+        color: #C82E41;
+        text-decoration: underline;
+        margin-top: auto;
+      }
+    }
+    th:nth-child(2){
+      margin-left: 35vw;
+      @media (min-width: 768px) {
+        margin-left:180px;
+      }
+    }
+
+    &.fixed{
+      display: block;
+      position: absolute;
+      top: 0;
+    }
+  }
+  tr.false-head,thead{
+    th{
+      height: 80px !important;
+      // @include media-breakpoint-up(md){
+      //   height: 100px !important;
+      // }
+    }
+  }
+  tr.false-head{
+    visibility: hidden;
+  }
+  & th,& td{
+    @include flexbox();
+    align-items: center;
+    justify-content: center;
+    min-width: 23.5vw;
+    width: 23.5vw;
+    max-width: 23.5vw;
+    flex: 1 1 23.5vw;
+    height: 3.5rem;
+    @media (min-width: 768px) {
+      width:     135px;
+      min-width: 135px;
+      max-width: 135px;
+      flex: 1 1  135px;
+    }
+    img{
+      width: 25px;
+    }
+  }
+  td{
+    &:first-of-type{
+      margin-left: 35vw;
+      @media (min-width: 768px) {
+        margin-left:180px;
+      }
+    }
+  }
+  & th:first-child{
+    position: absolute;
+    left: 0;
+    min-width: 35vw;
+    width: 35vw;
+    max-width: 35vw;
+    flex: 1 1 35vw;
+    @media (min-width: 768px) {
+      width:     180px;
+      min-width: 180px;
+      max-width: 180px;
+      flex: 1 1  180px;
+    }
+  }
+  & th.axis{
+    //background-color: #999 !important;
+  }
+}

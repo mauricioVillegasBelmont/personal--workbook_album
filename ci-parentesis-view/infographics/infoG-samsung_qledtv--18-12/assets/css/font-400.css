@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'SamsungOne';
+  src: url('SamsungOne-400.eot');
+  src: url('SamsungOne-400.woff2') format('woff2'),
+       url('SamsungOne-400.woff') format('woff'),
+       url('SamsungOne-400.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

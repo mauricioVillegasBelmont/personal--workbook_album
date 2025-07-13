@@ -1,0 +1,551 @@
+/*@import url('https://fonts.googleapis.com/css?family=Chango&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Erica+One&subset=latin-ext');*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+/* =============================================================================
+   base
+   ========================================================================== */
+body {
+	font:normal 75% Arial, Helvetica, sans-serif;
+}
+h1{
+	font-family: 'Montserrat', sans-serif;
+	/*font-family: 'Erica One', cursive;*/
+	/*font-family: 'Chango', cursive;*/
+	font-size: 3em;
+	text-align: left;
+	color: #1d1d1d;
+}
+h2{
+	font-family: 'Merienda', cursive;
+	/*font-family: 'Erica One', cursive;*/
+	/*font-family: 'Chango', cursive;*/
+	font-size: 2em;
+	text-align: right;
+	color: #1d1d1d;
+}
+/* =============================================================================
+   estados
+   ========================================================================== */
+.disabled{
+	opacity: 0;
+	pointer-events: none;
+}
+.dNone{
+	display: none !important;
+}
+.np{
+	padding: none !important;
+}
+/* =============================================================================
+   objetos //bg colour
+   ========================================================================== */
+
+div.fst{
+	background-color: #1c1c1c;
+}
+div.snd{
+	background-color: #60a9dd !important;
+}
+div.trd{
+	background-color: #c52f2f;
+}
+div.trd{
+	background-color: #97b733 !important;
+}
+
+/* =============================================================================
+   objetos //particulas
+   ========================================================================== */
+.snow{
+	overflow:hidden;
+}
+#particlesBG {
+	background-color: #363d45;
+	background-image: url('../img/bg_rombos.png');
+	background-size:auto;
+	background-position: 50% 50%;
+	background-repeat: repeat;
+	z-index: 0;
+	-webkit-transition: background-color 2s ease-in;
+    -ms-	transition: background-color 2s ease-in;
+    		transition: background-color 2s ease-in;
+}
+#particles01 {
+	background-color: transparent;
+	background-image: url('');
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	pointer-events: none;
+	z-index: 100000;
+
+}
+/* =============================================================================
+   objetos // paginas
+   ========================================================================== */
+section{
+	pointer-events: none;
+	transition: all 1.5s ease;
+	overflow: hidden;
+}
+section.prevPage{
+	left: -10vw;
+	z-index: 100;
+	transform-origin: center left;
+	transform: rotateY(-90deg);
+	opacity: 0;
+}
+section.nextPage{
+	left: 100vw;
+	right: -110vw;
+	z-index: 10;
+	opacity: 0;
+	overflow: hidden;
+}
+section.current{
+	left: 0;
+	right: 0;
+	z-index: 100;
+	overflow: hidden;
+}
+
+
+section >.cont0{
+	padding: 3vw 2vh;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	border-radius: 10px;
+
+}
+section >.cont1{
+	overflow-x: hidden;
+	overflow-y: hidden;
+	border-radius: 10px;
+	-webkit-box-shadow: 2px 2px 7px 4px rgba(0,0,0,0.2);
+	-moz-  	box-shadow: 2px 2px 7px 4px rgba(0,0,0,0.2);
+			box-shadow: 2px 2px 7px 4px rgba(0,0,0,0.2);
+}
+
+section >.wrapper{
+	display: block;;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+section.current >.wrapper{
+}
+
+section >.md_wrapp{
+	pointer-events: all;
+}
+section >.fs_wrapp{
+	display: block;;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	pointer-events: all;
+}
+
+
+section.current>.unopened{
+	padding: 0 !important;
+	min-width:  10px !important;
+	max-width:  20vh  !important;
+	min-height: 10px !important;
+	max-height: 20vh  !important;
+	overflow: visible;
+	cursor: pointer;
+}
+.unopened .candles-msg,
+.unopened video,
+section.current>.unopened *{
+	visibility: 0;
+	opacity: 0;
+	pointer-events: none;
+	overflow-y: hidden;
+	display: none;
+}
+section .unopened::before{
+	content: ' ';
+	position: absolute;
+	left: 50%;
+	top:  50%;
+	width:  70vh;
+	max-width: 95vw;
+	height: 70vh;
+	transform: translate(-50%, -60%);
+	background-image: url(../img/gift-01.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+/* =============================================================================
+   objetos // paginas scrollbar
+   ========================================================================== */
+.wrapper::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+.wrapper::-webkit-scrollbar{
+	border-radius: 10px;
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.wrapper::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #aa0000;
+	background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .6) 25%, transparent 25%,  transparent 50%,  rgba(255, 255, 255, .6) 50%,  rgba(255, 255, 255, .6) 75%, transparent 75%,  transparent)
+}
+
+.absps{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+/* =============================================================================
+   objetos // paginas/// galleryWrapp
+   ========================================================================== */
+
+section.current>.galleryWrapp{
+	margin: 0 auto;
+	display: -ms-grid !important;
+	display: grid !important;
+	-ms-grid-gap: 10px;
+	-ms-grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) );
+	-ms-grid-auto-rows: 250px;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) );
+	grid-auto-rows: 250px;
+}
+section.current>.galleryWrapp .box{
+	background-color: #444;
+	color: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	font-size: 150%;
+}
+/* =============================================================================
+   objetos // paginas/// prictureFrame
+   ========================================================================== */
+section.current>.prictureFrame{
+	/*display: -ms-grid !important;
+	display: grid !important;
+	-ms-grid-gap: 10px;
+	-ms-grid-template-columns: 100%;
+	-ms-grid-auto-rows: 250px;
+	grid-gap: 10px;
+	grid-template-columns: 100%;
+	grid-auto-rows: 250px;*/
+	position: absolute;
+	display: block;
+	margin-bottom: 10px;
+	margin: auto;
+	padding: 0;
+}
+section.current>.prictureFrame .box{
+	display: block;
+	color: #fff;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	width: 100%;
+	min-height: 10vh;
+	max-height: 100%;
+	padding: 20px;
+}
+section.current>.prictureFrame img{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.prictureFrame h1, .prictureFrame h2,.prictureFrame img{
+	position: absolute;
+	color: #1d1d1d;
+	/*-ms-grid-template-rows: 25vh minmax(320px, 80vh) repeat(auto-fill, minmax(90px, min-content) );
+	grid-template-rows: 25vh minmax(320px, 80vh) repeat(auto-fill, minmax(90px, min-content) );*/
+}
+section.current>.prictureFrame h1{
+	top: 2vh;
+	left: 2vw;
+}
+section.current>.prictureFrame h2{
+	bottom: 2vh;
+	right: 2vw;
+}
+#teamPic{
+	position: absolute;
+	cursor: pointer;
+	object-fit: contain;
+	object-position: center;
+}
+#teamBanner{
+	position: absolute;
+	background-color: #FE9502;
+	object-fit: contain;
+	object-position: center;
+}
+#teamdec00{
+	position: absolute;
+	height: 100%;
+	max-height: 100%;
+	-webkit-transform-origin: 50% 0%;
+	-ms-    transform-origin: 50% 0%;
+	        transform-origin: 50% 0%;
+	-webkit-transform: rotateX(90deg);
+	-ms-    transform: rotateX(90deg);
+	        transform: rotateX(90deg);
+	pointer-events: none;
+}
+#teamdec01{
+	position: absolute;
+	height: 100%;
+	max-height: 100%;
+	-webkit-transform-origin: 50% 100%;
+	-ms-    transform-origin: 50% 100%;
+	        transform-origin: 50% 100%;
+	-webkit-transform: rotateX(90deg);
+	-ms-    transform: rotateX(90deg);
+	        transform: rotateX(90deg);
+	pointer-events: none;
+}
+
+#teamdec00.fired{
+	-webkit-transform: rotateX(0deg);
+	-ms-    transform: rotateX(0deg);
+	        transform: rotateX(0deg);
+}
+#teamdec01.fired{
+	-webkit-transform: rotateX(0deg);
+	-ms-    transform: rotateX(0deg);
+	        transform: rotateX(0deg);
+}
+/* =============================================================================
+   objetos // paginas/// ytVideoFrameWrapp
+   ========================================================================== */
+section.current>.ytVideoFrameWrapp{
+	margin: auto;
+	display: block;
+	overflow: visible;
+	/*display: -ms-grid !important;
+	display: grid !important;
+	-ms-grid-template-columns: 100%;
+	-ms-grid-template-rows: 100%;
+	grid-template-columns: 100%;
+	grid-template-rows: 100%;*/
+}
+.ytVideoFrameWrapp .box{
+	background-color: #444;
+	color: #fff;
+
+}
+/* =============================================================================
+   objetos// footer
+   ========================================================================== */
+footer{
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 0 10px 0 0;
+	-webkit-box-shadow: 2px -2px 7px 4px rgba(0,0,0,0.2);
+	-moz-  	box-shadow: 2px -2px 7px 4px rgba(0,0,0,0.2);
+			box-shadow: 2px -2px 7px 4px rgba(0,0,0,0.2);
+}
+footer img.lnk{
+	display: inline-block;
+	height: auto;
+	max-height: 30px;
+	margin: 0 auto;
+}
+footer span.lnk{
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+}
+/* =============================================================================
+   objetos// page obj
+   ========================================================================== */
+#firsmesageVid{
+	position: absolute;
+
+	top: calc(50% - 1px);
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	margin: 0;
+	margin: 0;
+	height: calc(100% + 4px);
+	/*width: calc(100% +  4px);*/
+}
+#fstmsgimg{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+#fstmsgimg img{
+	object-fit: contain;
+	max-width:  100%;
+	max-height: 100%;
+}
+
+/* =============================================================================
+   objetos// svg
+   ========================================================================== */
+.clckMe{
+	pointer-events: none !important;
+}
+
+.svgCircleThease{
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin: auto;
+}
+#circle1{
+	-webkit-animation: clkme1 10s infinite ease-out;
+			animation: clkme1 10s infinite ease-out;
+}
+#circle2{
+	-webkit-animation: clkme2 10s infinite ease-out;
+			animation: clkme2 10s infinite ease-out;
+}
+#circle3{
+	-webkit-animation: clkme3 10s infinite ease-out;
+			animation: clkme3 10s infinite ease-out;
+}
+@-webkit-keyframes clkme1{
+	0%{
+		r:0;
+		stroke:rgba(255,255,255,0.0);
+	}
+	90%{
+		r:0;
+		stroke:rgba(255,255,255,0.0);
+	}
+	95%{
+		r:30;
+		stroke:rgba(255,255,255,0.2);
+	}
+	100%{
+		r:30;
+		stroke:rgba(255,255,255,0.0);
+	}
+}
+@keyframes clkme1{
+	0%{
+		r:0;
+		stroke:rgba(255,255,255,0.0);
+	}
+	90%{
+		r:0;
+		stroke:rgba(255,255,255,0.0);
+	}
+	95%{
+		r:30;
+		stroke:rgba(255,255,255,0.2);
+	}
+	100%{
+		r:30;
+		stroke:rgba(255,255,255,0.0);
+	}
+}
+@-webkit-keyframes clkme2{
+	0%{
+		r:0;
+		stroke:rgba(255,255,255,0.0);
+	}
+	90%{
+		r:0;
+		stroke:rgba(255,255,255,0.0);
+	}
+	95%{
+		r:30;
+		stroke:rgba(255,255,255,0.2);
+	}
+	100%{
+		r:30;
+		stroke:rgba(255,255,255,0.0);
+	}
+}
+@keyframes clkme2{
+	0%{
+		r:0;
+		stroke:rgba(255,255,255,0.0);
+	}
+	90%{
+		r:0;
+		stroke:rgba(255,255,255,0.0);
+	}
+	95%{
+		r:30;
+		stroke:rgba(255,255,255,0.2);
+	}
+	100%{
+		r:30;
+		stroke:rgba(255,255,255,0.0);
+	}
+}
+@-webkit-keyframes clkme3{
+	0%{
+		r:0;
+		stroke:rgba(255,255,255,0.0);
+	}
+	90%{
+		r:0;
+		stroke:rgba(255,255,255,0.0);
+	}
+	95%{
+		r:30;
+		stroke:rgba(255,255,255,0.2);
+	}
+	100%{
+		r:30;
+		stroke:rgba(255,255,255,0.0);
+	}
+}
+@keyframes clkme3{
+	0%{
+		r:0;
+		stroke:rgba(255,255,255,0.0);
+	}
+	90%{
+		r:0;
+		stroke:rgba(255,255,255,0.0);
+	}
+	95%{
+		r:30;
+		stroke:rgba(255,255,255,0.2);
+	}
+	100%{
+		r:30;
+		stroke:rgba(255,255,255,0.0);
+	}
+}

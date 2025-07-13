@@ -1,0 +1,82 @@
+
+@import 'mixins';
+#styky-table-module,.styky-table-module{
+  display: block;
+  position: relative;
+  margin: 1.5rem auto;
+  overflow: hidden;
+  max-width: 100%;
+  @include media-breakpoint-up(md){
+    max-width: 800px;
+  }
+
+  & *{
+    box-sizing: border-box;
+  }
+  @import 'table-body';
+  @import 'overlay';
+  @import 'animations';
+  &.parentesis{
+    .styky-table-overlay{
+      svg{
+        margin-bottom: 1.5rem;
+      }
+      p{
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: #fff;
+      }
+    }
+
+    table{
+      font-size: 0.8rem;
+      font-family: 'Lato', sans-serif;
+      @include media-breakpoint-up(md){
+        font-size: 1rem;
+      }
+      & th.axis{
+        background-color: #C82E41 !important;
+      }
+
+      thead{
+        tr{
+          color: #fff;
+          th{
+            background-color: #1a1a1a;
+          }
+          td{
+          }
+        }
+      }
+      tbody{
+        tr{
+        }
+        th{
+          background-color: #4d4d4d;
+          color: #fff;
+        }
+        td{
+          background-color: #ECEBEB;
+          color: #1a1a1a;
+        }
+        tr:nth-child(odd) td{
+          background-color: darken(#ECEBEB, 5);//(#ECEBEB);
+        }
+      }
+    }
+    thead{
+      th{
+        background-color: #1a1a1a;
+      }
+    }
+    table.stiky-table{
+      tr.false-head{
+        td{
+          background-color: #4d4d4d;
+        }
+      }
+    }
+  }
+}

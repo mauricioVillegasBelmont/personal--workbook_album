@@ -1,0 +1,755 @@
+
+#infographic svg.disabled{
+  pointer-events: none !important;
+  cursor: auto !important;
+}
+
+#infographic #colorGraphic{
+  cursor: pointer;
+}
+#infographic{
+  color: #fff;
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+#infographic button{
+  border: transparent 1px solid;
+  background-color: transparent;
+  transition: opacity 0.5s ease-in;
+
+}
+#infographic button.current{
+  opacity: 0.5;
+}
+#infographic .ilustration img{
+  object-fit: contain;
+  object-position: center;
+}
+#infographic .ml-auto{
+  margin-left: auto !important;
+}
+#infographic .mt-8{
+  margin-top: 4.5rem !important;
+}
+#infographic .mt-5{
+  margin-top: 3rem !important;
+}
+#infographic .mt-3{
+  margin-top: 1.5rem !important;
+}
+#infographic .mt-1{
+  margin-top: 0.5rem !important;
+}
+
+#infographic .justify-center{
+  justify-content: center;
+}
+#infographic .justify-between{
+  justify-content: space-between;
+}
+
+#infographic .text-center{
+  text-align: center!important;
+}
+#infographic p{
+  margin-block-start: 0.3em;
+  margin-block-end:   0.7em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+#infographic h1,#infographic h2, #infographic h3, #infographic h4, #infographic h5, #infographic h6{
+  font-family: SamsungOne;
+  font-weight: 800;
+}
+#infographic h1 {
+  color: #202020;
+}
+#infographic h2 {
+  color: #fff;
+}
+#infographic a,#infographic p,#infographic span{
+  font-family: SamsungOne;
+  font-weight: normal;
+  color: #fff;
+}
+.controllers{
+  justify-content: space-around;
+  position: relative;
+  bottom: 0;
+  top: auto;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.controllers .btn{
+  width:  20%;
+  height: 20%;
+  max-width:  120px;
+  max-height: 120px;
+  padding: 0;
+  align-items: center;
+  text-align: center;
+  outline: 0;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  overflow: hidden;
+}
+
+#infographic .controllers .btn:nth-child(1){
+  animation-delay: 0.2s;
+}
+#infographic .controllers .btn:nth-child(2){
+  animation-delay: 0.4s;
+}
+#infographic .controllers .btn:nth-child(3){
+  animation-delay: 0.6s;
+}
+#infographic .controllers .btn:nth-child(4){
+  animation-delay: 0.8s;
+}
+/* animation-delay: 2s; */
+#infographic .controllers .btn img{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  /* position: relative; */
+  cursor: pointer;
+}
+#infographic .controllers .btn:hover img, .controllers button.current img{
+  margin-top: -100%;
+}
+#infographic .wrapper{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 700px;
+  height: auto;
+  padding: 0 1rem;
+  margin: 0 auto;
+  -webkit-transition: top 2s ease-in-out;
+     -moz-transition: top 2s ease-in-out;
+       -o-transition: top 2s ease-in-out;
+          transition: top 2s ease-in-out;
+}
+#infographic .wrapper .content{
+  margin: 0 auto;
+}
+
+#infographic .wrapper_absolute_position{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 320px;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+#infographic .top-auto{
+  top:auto;
+}
+
+#infographic .bottom_position{
+  top:auto;
+  bottom: 0;
+}
+
+#infographic .logo img{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+#infographic .logos{
+  justify-content: center;
+}
+#samsung.logo, #q-led.logo{
+  align-self: center;
+  max-width: 80%;
+  min-width: 200px;
+  margin-bottom: 1rem;
+}
+#samsung{
+  height: auto;
+  width: 200px;
+}
+#q-led{
+  /* margin-left: auto; */
+
+  height: auto;
+  width: 200px;
+}
+
+#infographic{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  background: center / contain  #ffffff url("../img/bg.jpg") repeat;
+  z-index: 0;
+  overflow: hidden;
+}
+#infographic .overlay{
+  /* position: absolute; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  /* z-index: -1; */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,262626+100&0+0,1+87 */
+background: -moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(38,38,38,0.8) 80%); /* FF3.6-15 */
+background: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 0%,rgba(38,38,38,0.8) 80%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(38,38,38,0.8) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#262626',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#infographic .scene-tv{
+  transition: all 1s ease-in-out;
+  perspective: 400px;
+  left:  0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+#infographic .scene-tv::before{
+  content: '_';
+  color: transparent;
+  position: absolute;
+  background-color: #000;
+  min-width: 30px;
+  width:   5%;
+  height:  10px;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  top: auto;
+  margin: auto;
+
+  -webkit-border-radius: 0px 0px 5px 5px;
+     -moz-border-radius: 0px 0px 5px 5px;
+          border-radius: 0px 0px 5px 5px;
+}
+#infographic .scene-tv::after{
+  content: '_';
+  color: transparent;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+
+  width: 10px;
+  height: 100vh;
+  background: center / contain  rgba(0,0,0,0) url("../img/cable.png") repeat;
+
+  bottom:-100vh;
+  left: 0;
+  right: 0;
+  top: auto;
+  margin: auto;
+}
+
+#infographic .tv{
+  transform: rotateY(0deg);
+
+  -webkit-animation-direction:normal;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: tv-default;
+
+  animation-direction:normal;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-name: tv-default;
+
+  overflow-y: hidden;
+}
+#infographic .scene-tv .content{
+  overflow: hidden;
+  max-width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+#infographic .scene-tv .content svg{
+  min-height: 80px;
+}
+#infographic .scene-tv .content img{
+  min-height: 100%;
+  min-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+#infographic .scene-tv .content img.current{
+  opacity: 1 !important;
+}
+#infographic #q-picture-img{
+  cursor: pointer;
+
+  -webkit-filter:saturate(0.7) brightness(70%);
+     -moz-filter:saturate(0.7) brightness(70%);
+      -ms-filter:saturate(0.7) brightness(70%);
+       -o-filter:saturate(0.7) brightness(70%);
+          filter:saturate(0.7) brightness(70%);
+}
+#q-picture-img.active{
+  filter:saturate(1);
+}
+#infographic .marco{
+  position: relative;
+  max-width: 100vw;
+  width: 100%;
+  min-height: 50px;
+  height: auto;
+  border: 2px solid #000;
+  /* z-index: 1; */
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+
+  -webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.25);
+     -moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.25);
+          box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.25);
+}
+
+#infographic .marco .content{
+  width: 100%;
+  height: 170px;
+  /* background-color: #fff; */
+  border-top:    1px solid #333;
+  border-left:   1px solid #666;
+  border-bottom: 1px solid #999;
+  border-right:  1px solid #adadad;
+}
+
+#infographic .contents{
+  min-height: 370px;
+  bottom: auto;
+  right: 0;
+  justify-content: space-between;
+}
+#infographic .contents .content{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+#infographic .contents .ilustration{
+  display: flex;
+  align-self:flex-start;
+  max-height: 400px;
+  margin-bottom: 1rem;
+  font-weight: 800 !important;
+  position: relative;
+}
+#infographic .contents .ilustration img{
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+
+}
+#infographic .contents .content .ilustration span{
+  font-weight: 800 !important;
+  margin: 0 0.5rem;
+  color: #fff;
+  font-size: 200%;
+}
+#infographic .contents .info{
+  min-width: 200px;
+  padding: 1rem;
+  align-self:flex-start;
+  /* margin-top: auto; */
+  /* text-align: justify; */
+  color: #fff;
+
+  background-color: rgba(20, 40, 160, 0.8);
+  background-image: url(../img/texture_1.png);
+  background-repeat: repeat;
+  background-size: auto;
+
+
+  -webkit-border-radius: 0.5rem;
+     -moz-border-radius: 0.5rem;
+          border-radius: 0.5rem;
+}
+
+#infographic .contents .content:nth-child(1) .info{
+  background-image: url(../img/texture_1.png), -webkit-linear-gradient(to bottom, rgba(11, 135, 147,0.7), rgba(54, 0, 51,0.7));  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: url(../img/texture_1.png), linear-gradient(to bottom, rgba(11, 135, 147,0.7), rgba(54, 0, 51,0.7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#infographic .contents .content:nth-child(2) .info{
+  background-color: rgba(20, 40, 160, 0.8);
+  background: url(../img/texture_1.png), -webkit-linear-gradient(to bottom, rgba(101, 78, 163,0.7), rgba(234, 175, 200,0.7));  /* Chrome 10-25, Safari 5.1-6 */
+  background: url(../img/texture_1.png), linear-gradient(to bottom, rgba(101, 78, 163,0.7), rgba(234, 175, 200,0.7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#infographic .contents .content:nth-child(3) .info{
+  background-color: rgba(20, 40, 160, 0.8);
+  background: url(../img/texture_1.png), -webkit-linear-gradient(to bottom, rgba(255, 75, 31,0.7), rgba(255, 144, 104,0.7));  /* Chrome 10-25, Safari 5.1-6 */
+  background: url(../img/texture_1.png), linear-gradient(to bottom, rgba(255, 75, 31,0.7), rgba(255, 144, 104,0.7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#infographic .contents .content:nth-child(4) .info{
+  background-color: rgba(20, 40, 160, 0.8);
+
+  background: url(../img/texture_1.png), -webkit-linear-gradient(to bottom, rgba(145, 18, 143,0.7), rgba(224, 0, 102,0.7), rgba(253, 91, 43,0.7) );  /* Chrome 10-25, Safari 5.1-6 */
+  background: url(../img/texture_1.png), linear-gradient(to bottom, rgba(145, 18, 143,0.7), rgba(224, 0, 102,0.7), rgba(253, 91, 43,0.7) ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#infographic .contents .info h1{
+  text-align: center;
+
+}
+
+#infographic .contents .info img{
+  width: 7rem;
+  max-width: 80%;
+  -webkit-filter: drop-shadow(8px 8px 10px #100030); /* Safari */
+          filter: drop-shadow(8px 8px 10px #100030);
+}
+
+
+/*  */
+/* custom animations */
+/*  */
+
+@-webkit-keyframes tv-spin-left {
+    0% {-webkit-transform:rotateY( 0deg );}
+    100% {-webkit-transform:rotateY( 25deg );}
+}
+@-moz-keyframes tv-spin-left {
+    0% {-moz-transform:rotateY( 0deg );}
+    100% {-moz-transform:rotateY( 25deg);}
+}
+@-o-keyframes tv-spin-left {
+    0% {-o-transform:rotateY( 0deg );}
+    100% {-o-transform:rotateY( 25deg );}
+}
+@keyframes tv-spin-left {
+    0% {transform:rotateY( 0deg );}
+    100% {transform:rotateY( 25deg );}
+}
+
+
+@-webkit-keyframes tv-default {
+    100% {-webkit-transform:rotateY( 0deg );}
+}
+@-moz-keyframes tv-default {
+    100% {-moz-transform:rotateY( 0deg );}
+}
+@-o-keyframes tv-default {
+    100% {-o-transform:rotateY( 0deg );}
+}
+@keyframes tv-default {
+    100% {transform:rotateY( 0deg );}
+}
+
+@-webkit-keyframes tv-spin-right {
+    0% {-webkit-transform:rotateY( 0deg );}
+    100% {-webkit-transform:rotateY( -25deg );}
+}
+@-moz-keyframes tv-spin-right {
+    0% {-webkit-transform:rotateY( 0deg );}
+    100% {-webkit-transform:rotateY( -25deg );}
+}
+@-o-keyframes tv-spin-right {
+    0% {-webkit-transform:rotateY( 0deg );}
+    100% {-webkit-transform:rotateY( -25deg );}
+}
+@keyframes tv-spin-right {
+    0% {transform:rotateY( 0deg );}
+    100% {transform:rotateY( -25deg );}
+}
+
+
+/* svg */
+#infographic .ilustration svg{
+  filter: drop-shadow(0 0 0.75rem #333);
+}
+#infographic .ilustration svg .line{
+  -webkit-animation-direction:normal;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+
+  animation-direction:normal;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+
+#infographic .ilustration svg .line:nth-child(2) {
+  animation-delay: 0.1s;
+}
+#infographic .ilustration svg .line:nth-child(3) {
+  animation-delay: 0.2s;
+}
+#infographic .ilustration svg .line:nth-child(4) {
+  animation-delay: 0.3s;
+}
+#infographic .ilustration svg .line:nth-child(5) {
+  animation-delay: 0.4s;
+}
+#infographic .ilustration svg .line:nth-child(6) {
+  animation-delay: 0.5s;
+}
+#infographic .ilustration svg .line:nth-child(7) {
+  animation-delay: 0.6s;
+}
+#infographic .ilustration svg .line:nth-child(8) {
+  animation-delay: 0.7s;
+}
+#infographic .ilustration svg .line:nth-child(9) {
+  animation-delay: 0.8s;
+}
+#infographic .ilustration svg .line:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+#infographic .infogr-full #r9{
+ -webkit-animation-name: color-up-9;
+         animation-name: color-up-9;
+}
+#infographic .infogr-full #r8{
+  -webkit-animation-name: color-up-8;
+          animation-name: color-up-8;
+}
+#infographic .infogr-full #r7{
+  -webkit-animation-name: color-up-7;
+          animation-name: color-up-7;
+}
+#infographic .infogr-full #r6{
+  -webkit-animation-name: color-up-6;
+          animation-name: color-up-6;
+}
+#infographic .infogr-full #r5{
+  -webkit-animation-name: color-up-5;
+          animation-name: color-up-5;
+}
+#infographic .infogr-full #r4{
+ -webkit-animation-name: color-up-4;
+         animation-name: color-up-4;
+}
+#infographic .infogr-full #r3{
+  -webkit-animation-name: color-up-3;
+          animation-name: color-up-3;
+}
+#infographic .infogr-full #r2{
+ -webkit-animation-name: color-up-2;
+         animation-name: color-up-2;
+}
+#infographic .infogr-full #r1{
+  -webkit-animation-name: color-up-1;
+          animation-name: color-up-1;
+}
+#r9{
+ -webkit-animation-name: color-down-9;
+         animation-name: color-down-9;
+}
+#r8{
+  -webkit-animation-name: color-down-8;
+          animation-name: color-down-8;
+}
+#r7{
+  -webkit-animation-name: color-down-7;
+          animation-name: color-down-7;
+}
+#r6{
+  -webkit-animation-name: color-down-6;
+          animation-name: color-down-6;
+}
+#r5{
+  -webkit-animation-name: color-down-5;
+          animation-name: color-down-5;
+}
+#r4{
+ -webkit-animation-name: color-down-4;
+         animation-name: color-down-4;
+}
+#r3{
+  -webkit-animation-name: color-down-3;
+          animation-name: color-down-3;
+}
+#r2{
+ -webkit-animation-name: color-down-2;
+         animation-name: color-down-2;
+}
+#r1{
+  -webkit-animation-name: color-down-1;
+          animation-name: color-down-1;
+}
+@keyframes color-up-1 {
+  0% {
+    transform: scaleX(0.1);
+  }
+  100% {
+    transform: scaleX(1) !important;
+  }
+}
+@keyframes color-up-2 {
+  0% {
+    transform: scaleX(0.2);
+  }
+  100% {
+    transform: scaleX(1) !important;
+  }
+}
+@keyframes color-up-3 {
+  0% {
+    transform: scaleX(0.3);
+  }
+  100% {
+    transform: scaleX(1) !important;
+  }
+}
+@keyframes color-up-4 {
+  0% {
+    transform: scaleX(0.4);
+  }
+  100% {
+    transform: scaleX(1) !important;
+  }
+}
+@keyframes color-up-5 {
+  0% {
+    transform: scaleX(0.5);
+  }
+  100% {
+    transform: scaleX(1) !important;
+  }
+}
+@keyframes color-up-6 {
+  0% {
+    transform: scaleX(0.6);
+  }
+  100% {
+    transform: scaleX(1) !important;
+  }
+}
+@keyframes color-up-7 {
+  0% {
+    transform: scaleX(0.7);
+  }
+  100% {
+    transform: scaleX(1) !important;
+  }
+}
+@keyframes color-up-8 {
+  0% {
+    transform: scaleX(0.8);
+  }
+  100% {
+    transform: scaleX(1) !important;
+  }
+}
+@keyframes color-up-9 {
+  0% {
+    transform: scaleX(0.9);
+  }
+  100% {
+    transform: scaleX(1) !important;
+  }
+}
+
+
+
+@keyframes color-down-1 {
+  0% {transform: scaleX(1)
+  }
+  100% {
+    transform: scaleX(0.1);
+  }
+}
+@keyframes color-down-2 {
+  0% {transform: scaleX(1)
+  }
+  100% {
+    transform: scaleX(0.2);
+  }
+}
+@keyframes color-down-3 {
+  0% {transform: scaleX(1)
+  }
+  100% {
+    transform: scaleX(0.3);
+  }
+}
+@keyframes color-down-4 {
+  0% {transform: scaleX(1)
+  }
+  100% {
+    transform: scaleX(0.4);
+  }
+}
+@keyframes color-down-5 {
+  0% {transform: scaleX(1)
+  }
+  100% {
+    transform: scaleX(0.5);
+  }
+}
+@keyframes color-down-6 {
+  0% {transform: scaleX(1)
+  }
+  100% {
+    transform: scaleX(0.6);
+  }
+}
+@keyframes color-down-7 {
+  0% {transform: scaleX(1)
+  }
+  100% {
+    transform: scaleX(0.7);
+  }
+}
+@keyframes color-down-8 {
+  0% {transform: scaleX(1)
+  }
+  100% {
+    transform: scaleX(0.8);
+  }
+}
+@keyframes color-down-9 {
+  0% {
+    transform: scaleX(1)
+  }
+  100% {
+    transform: scaleX(0.9);
+  }
+}
