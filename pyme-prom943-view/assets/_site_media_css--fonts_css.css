@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('./AvenirLTPro-Black.woff2') format('woff2'),
+  url('./AvenirLTPro-Black.woff') format('woff');
+  font-weight: bolder;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('./AvenirLTPro-Heavy.woff2') format('woff2'),
+  url('./AvenirLTPro-Heavy.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('./AvenirLT-HeavyOblique.woff2') format('woff2'),
+  url('./AvenirLT-HeavyOblique.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('./AvenirLTStd-Book.woff2') format('woff2'),
+  url('./AvenirLTStd-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('./AvenirLT-BookOblique.woff2') format('woff2'),
+  url('./AvenirLT-BookOblique.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
+
+
+@font-face {
+  font-family: 'Futura';
+  src: url('./FuturaBT-Medium.woff2') format('woff2'),
+  url('./FuturaBT-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Papyrus';
+  src: url('./Papyrus-Regular.woff2') format('woff2'),
+  url('./Papyrus-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+    font-family: 'Papyrus';
+    /* src: url('./PapyrusLET-Bold.woff2') format('woff2'),
+        url('./PapyrusLET-Bold.woff') format('woff'); */
+    src: url('./PapyrusLET-Bold.woff2') format('woff2'),
+        url('./PapyrusLET-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
